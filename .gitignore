@@ -1,0 +1,94 @@
+# === Node / Next.js ===
+node_modules/
+.next/
+out/
+dist/
+.npm/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Next.js static exports
+/.vercel
+.vercel_build_output/
+.vercel/
+
+# === Java / Spring Boot ===
+target/
+build/
+out/
+!.mvn/wrapper/maven-wrapper.jar
+.mvn/timing.properties
+spring.log
+
+# IDE settings
+.idea/
+*.iml
+*.ipr
+*.iws
+.vscode/
+.classpath
+.project
+.settings/
+bin/
+
+# Gradle
+.gradle/
+build/
+gradle-app.setting
+!gradle/wrapper/gradle-wrapper.jar
+
+# Maven
+.mvn/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+
+# Logs
+logs/
+*.log
+*.tmp
+
+# === OS ===
+.DS_Store
+Thumbs.db
+
+# === Docker ===
+/docker-compose.override.yml
+*.pid
+*.seed
+*.bak
+
+# === Test artifacts ===
+coverage/
+test-output/
+reports/
+jacoco.exec
+hs_err_pid*
+replay_pid*
+
+# === Misc ===
+*.swp
+*.swo
+*.class
+*.jar
+*.war
+*.ear
+*.db
+*.sqlite
+*.log
+*.env
+.env.*
+!.env.example
+
+# === Temporary / Local development ===
+*.local
+*.secret
+/tmp/
