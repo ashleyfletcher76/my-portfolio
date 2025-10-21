@@ -1,4 +1,3 @@
-import LocaleSwitcher from "./LocaleSwitcher";
 import LanguageSwitch from "./LanguageToggle";
 
 export default function NavBar() {
