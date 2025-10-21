@@ -1,7 +1,7 @@
 import {getRequestConfig} from 'next-intl/server';
 import { Locale, routing } from './routing';
-import enMessages from '../../messages/en.json'
-import deMessages from '../../messages/de.json'
+import enMessages from '../../messages/en.json';
+import deMessages from '../../messages/de.json';
 
 type Messages = Record<string, Record<string, string>>;
 
