@@ -3,7 +3,9 @@ import { Locale, routing } from './routing';
 import enMessages from '../../messages/en.json'
 import deMessages from '../../messages/de.json'
 
-const messageMap: Record<string, any> = {
+type Messages = Record<string, Record<string, string>>;
+
+const messageMap: Record<string, Messages> = {
   en: enMessages,
   de: deMessages,
 };
