@@ -21,7 +21,7 @@ export default function LanguageSwitch() {
       onClick={toggle}
       aria-label="Toggle language"
       className={`
-        relative flex items-center justify-between w-15 h-7
+        relative flex items-center justify-between w-[3.75rem] h-7
         rounded-full bg-gray-200 dark:bg-gray-700
         p-1 transition-colors duration-300
       `}
