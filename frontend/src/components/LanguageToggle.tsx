@@ -48,10 +48,10 @@ export default function LanguageSwitch() {
       {/* Sliding knob */}
       <span
         className={`
-          absolute top-1 left-1 w-7 h-5 rounded-full shadow-md
+          absolute top-0 left-0 w-7 h-7 rounded-full shadow-md
           bg-gradient-to-r from-green-400 to-emerald-600
           transform transition-transform duration-300 ease-in-out
-          ${isDE ? 'translate-x-[1.65rem]' : 'translate-x-0'}
+          ${isDE ? 'translate-x-[2rem]' : 'translate-x-0'}
         `}
       />
     </button>

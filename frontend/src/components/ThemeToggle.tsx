@@ -37,8 +37,8 @@ export default function ThemeToggle() {
       {/* Icons */}
     <Sun
       className={`
-        absolute left-2 h-4 w-3 z-10 pointer-events-none
-        text-amber-500 dark:text-amber-300
+        absolute left-2 h-4 w-4 z-10 pointer-events-none
+        text-amber-700 dark:text-amber-100
         transition-opacity duration-200
         ${isDark ? "opacity-50" : "opacity-100"}
       `}
@@ -47,7 +47,7 @@ export default function ThemeToggle() {
     />
     <Moon
       className={`
-        absolute right-2 h-4 w-3 z-10 pointer-events-none
+        absolute right-2 h-4 w-4 z-10 pointer-events-none
         text-slate-600 dark:text-indigo-200
         transition-opacity duration-200
         ${isDark ? "opacity-100" : "opacity-50"}
@@ -59,11 +59,11 @@ export default function ThemeToggle() {
       {/* Sliding knob */}
       <span
         className={`
-          absolute top-1 left-1 w-6 h-5 rounded-full shadow-md
+          absolute top-0 left-0 w-7 h-7 rounded-full shadow-md
           bg-gradient-to-r from-amber-300 to-yellow-500
           dark:from-indigo-400 dark:to-indigo-700
           transform transition-transform duration-300 ease-in-out
-          ${isDark ? "translate-x-[1.75rem]" : "translate-x-0"}
+          ${isDark ? "translate-x-[2rem]" : "translate-x-0"}
         `}
       />
     </button>
