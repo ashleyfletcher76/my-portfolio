@@ -3,6 +3,7 @@ import { getMessages } from 'next-intl/server';
 import { notFound } from 'next/navigation';
 import { Locale, routing } from '@/i18n/routing';
 import NavBar from '@/components/NavBar';
+import { ThemeProvider } from '@/components/ThemeProvider';
 import '../globals.css';
 
 export default async function LocaleLayout({
@@ -20,12 +21,19 @@ export default async function LocaleLayout({
   const messages = await getMessages();
 
   return (
-    <html lang={locale}>
-      <body>
-        <NextIntlClientProvider messages={messages}>
-          <NavBar />
-          {children}
-        </NextIntlClientProvider>
+    <html lang={locale} suppressHydrationWarning>
+      <body className='bg-background text-foreground transition-colors duration-300'>
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="system"
+          enableSystem
+          disableTransitionOnChange
+          >
+          <NextIntlClientProvider messages={messages}>
+            <NavBar />
+            {children}
+          </NextIntlClientProvider>
+        </ThemeProvider>
       </body>
     </html>
   );

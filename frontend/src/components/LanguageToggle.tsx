@@ -23,21 +23,24 @@ export default function LanguageSwitch() {
       className={`
         relative flex items-center justify-between w-[3.75rem] h-7
         rounded-full bg-gray-200 dark:bg-gray-700
-        p-1 transition-colors duration-300
+        p-1 transition-colors duration-300 overflow-hidden
       `}
     >
       {/* Label text */}
       <span
-        className={`absolute left-3 text-xs font-medium transition-colors duration-200 ${
-          isDE ? 'text-gray-400' : 'text-white'
-        }`}
+        className={`
+          absolute left-2 text-xs font-medium z-10 transition-colors duration-200
+          ${isDE ? 'text-gray-800 dark:text-gray-300' : 'text-white'}
+        `}
       >
         EN
       </span>
+
       <span
-        className={`absolute right-3 text-xs font-medium transition-colors duration-200 ${
-          isDE ? 'text-white' : 'text-gray-400'
-        }`}
+        className={`
+          absolute right-2 text-xs font-medium z-10 transition-colors duration-200
+          ${isDE ? 'text-white' : 'text-gray-800 dark:text-gray-300'}
+        `}
       >
         DE
       </span>
@@ -45,10 +48,10 @@ export default function LanguageSwitch() {
       {/* Sliding knob */}
       <span
         className={`
-          absolute top-1 left-1 w-6 h-5 rounded-full shadow-md
+          absolute top-1 left-1 w-7 h-5 rounded-full shadow-md
           bg-gradient-to-r from-green-400 to-emerald-600
           transform transition-transform duration-300 ease-in-out
-          ${isDE ? 'translate-x-[1.75rem]' : 'translate-x-0'}
+          ${isDE ? 'translate-x-[1.65rem]' : 'translate-x-0'}
         `}
       />
     </button>
