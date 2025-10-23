@@ -21,7 +21,7 @@ export default function LocaleSwitcherSelect({ defaultValue, label }: Props) {
       aria-label={label}
       defaultValue={defaultValue}
       onChange={onChange}
-      className="w-[90px] h-8 bg-transparent border rounded px-2"
+      className="h-8 w-[90px] rounded border bg-transparent px-2"
     >
       {routing.locales.map((l) => (
         <option key={l} value={l}>

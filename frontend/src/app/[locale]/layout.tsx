@@ -22,14 +22,14 @@ export default async function LocaleLayout({
   const messages = await getMessages();
 
   return (
-    <html lang={locale} suppressHydrationWarning className='h-full'>
-      <body className='min-h-screen bg-background text-foreground transition-colors duration-300'>
+    <html lang={locale} suppressHydrationWarning className="h-full">
+      <body className="bg-background text-foreground min-h-screen transition-colors duration-300">
         <ThemeProvider
           attribute="class"
           defaultTheme="system"
           enableSystem
           disableTransitionOnChange
-          >
+        >
           <NextIntlClientProvider messages={messages}>
             <NavBar />
             {children}

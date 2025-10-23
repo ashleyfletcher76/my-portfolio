@@ -16,14 +16,14 @@ export default function NavBar() {
   }, [open]);
 
   return (
-    <header className="flex items-center p-4 gap-3">
+    <header className="flex items-center gap-3 p-4">
       <div className="font-semibold">Ashley Fletcher</div>
 
       {/* Desktop (md+) */}
-      <nav className="hidden md:flex items-center gap-4">
+      <nav className="hidden items-center gap-4 md:flex">
         <NavLinks />
       </nav>
-      <div className='ml-auto flex items-center gap-3'>
+      <div className="ml-auto flex items-center gap-3">
         <LanguageSwitch />
         <ThemeToggle />
         {/* Mobile (<= md) */}
@@ -34,7 +34,7 @@ export default function NavBar() {
           aria-haspopup="dialog"
           aria-expanded={open}
           onClick={() => setOpen(true)}
-          className="md:hidden inline-flex size-10 items-center justify-center rounded-lg border border-border"
+          className="border-border inline-flex size-10 items-center justify-center rounded-lg border md:hidden"
         >
           <span className="sr-only">Open menu</span>
           <div className="space-y-1.5">
@@ -44,16 +44,14 @@ export default function NavBar() {
           </div>
         </button>
 
-            {/* <LanguageSwitch />
+        {/* <LanguageSwitch />
             <ThemeToggle /> */}
         <MobileMenu open={open} onClose={() => setOpen(false)}>
           <NavLinks onItemClick={() => setOpen(false)} />
-          <div className="mt-4 border-t border-border" />
-          <div className="flex items-center justify-between px-4">
-          </div>
+          <div className="border-border mt-4 border-t" />
+          <div className="flex items-center justify-between px-4"></div>
         </MobileMenu>
       </div>
-
     </header>
   );
 }

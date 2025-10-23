@@ -1,9 +1,9 @@
 export default function Head() {
-	return (
-		<>
-			<script
-				dangerouslySetInnerHTML={{
-					__html: `(function(){
+  return (
+    <>
+      <script
+        dangerouslySetInnerHTML={{
+          __html: `(function(){
 						try{
 						var theme = localStorage.getItem('theme');
 						var prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
@@ -13,9 +13,9 @@ export default function Head() {
 						document.documentElement.setAttribute('data-theme-ready','true');
 						}catch(e){}
 					})();`,
-				}}
-			/>
-			<meta name="viewport" content="width=device-width, initial-scale=1"/>
-		</>
-	)
+        }}
+      />
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+    </>
+  );
 }

@@ -21,39 +21,24 @@ export default function LanguageSwitch() {
       type="button"
       onClick={toggle}
       aria-label="Toggle language"
-      className={`
-        relative flex items-center justify-between w-[3.75rem] h-7
-        rounded-full bg-gray-200 dark:bg-gray-700
-        p-1 transition-colors duration-300 overflow-hidden
-      `}
+      className={`relative flex h-7 w-[3.75rem] items-center justify-between overflow-hidden rounded-full bg-gray-200 p-1 transition-colors duration-300 dark:bg-gray-700`}
     >
       {/* Label text */}
       <span
-        className={`
-          absolute left-2 text-xs font-medium z-10 transition-colors duration-200
-          ${isDE ? 'text-gray-800 dark:text-gray-300' : 'text-white'}
-        `}
+        className={`absolute left-2 z-10 text-xs font-medium transition-colors duration-200 ${isDE ? 'text-gray-800 dark:text-gray-300' : 'text-white'} `}
       >
         EN
       </span>
 
       <span
-        className={`
-          absolute right-2 text-xs font-medium z-10 transition-colors duration-200
-          ${isDE ? 'text-white' : 'text-gray-800 dark:text-gray-300'}
-        `}
+        className={`absolute right-2 z-10 text-xs font-medium transition-colors duration-200 ${isDE ? 'text-white' : 'text-gray-800 dark:text-gray-300'} `}
       >
         DE
       </span>
 
       {/* Sliding knob */}
       <span
-        className={`
-          absolute top-0 left-0 w-7 h-7 rounded-full shadow-md
-          bg-gradient-to-r from-green-400 to-emerald-600
-          transform transition-transform duration-300 ease-in-out
-          ${isDE ? 'translate-x-[2rem]' : 'translate-x-0'}
-        `}
+        className={`absolute top-0 left-0 h-7 w-7 transform rounded-full bg-gradient-to-r from-green-400 to-emerald-600 shadow-md transition-transform duration-300 ease-in-out ${isDE ? 'translate-x-[2rem]' : 'translate-x-0'} `}
       />
     </button>
   );
