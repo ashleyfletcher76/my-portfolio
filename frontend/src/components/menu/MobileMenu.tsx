@@ -23,7 +23,7 @@ export function MobileMenu({
   return (
     <div role="dialog" aria-modal="true" className="fixed inset-0 z-50 md:hidden" onClick={onClose}>
       <aside
-        className="bg-background animate-in slide-in-from-right absolute inset-y-0 right-0 flex w-34 max-w-[90vw] translate-x-0 flex-col py-4 shadow-xl duration-200"
+        className="bg-background animate-in slide-in-from-right absolute inset-y-0 right-0 flex w-[34rem] max-w-[90vw] translate-x-0 flex-col py-4 shadow-xl duration-200"
         onClick={(e) => e.stopPropagation()}
       >
         <div className="flex items-center justify-between px-4 pb-2">
