@@ -1,0 +1,87 @@
+@import 'tailwindcss';
+
+/* Help browsers choose the right default form/control palette */
+:root {
+  color-scheme: light dark;
+}
+
+/* ---------- Base (light) — RGB channels ---------- */
+:root {
+  --background: 255 255 255; /* #ffffff */
+  --foreground: 10 10 10;
+
+  /* a touch darker than pure white for sheets */
+  --card: 248 250 252; /* #f8fafc */
+  --card-foreground: 10 10 10;
+
+  --muted: 244 244 245;
+  --muted-foreground: 63 63 70;
+
+  /* slightly darker border for definition */
+  --border: 214 219 220; /* ~#d6dbdc */
+  --accent: 6 104 225;
+}
+
+/* ---------- Optional SSR fallback if JS disabled + system is dark ---------- */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: 10 10 10; /* #0a0a0a (for OLED black use 0 0 0) */
+    --foreground: 245 245 245; /* #f5f5f5 */
+
+    --card: 15 15 16; /* #0f0f10 */
+    --card-foreground: 231 231 231;
+
+    --muted: 17 18 22; /* #111216 */
+    --muted-foreground: 192 194 199;
+
+    --border: 42 44 51; /* #2a2c33 */
+    --accent: 122 176 255; /* #7ab0ff */
+  }
+}
+
+/* ---------- next-themes overrides (authoritative) ---------- */
+html.dark {
+  --background: 10 10 10;
+  --foreground: 245 245 245;
+
+  --card: 15 15 16;
+  --card-foreground: 231 231 231;
+
+  --muted: 17 18 22;
+  --muted-foreground: 192 194 199;
+
+  --border: 42 44 51;
+  --accent: 122 176 255;
+}
+
+html.light {
+  /* same as :root light (kept for clarity) */
+  --background: 255 255 255;
+  --foreground: 10 10 10;
+
+  --card: 248 250 252;
+  --card-foreground: 10 10 10;
+
+  --muted: 244 244 245;
+  --muted-foreground: 63 63 70;
+
+  --border: 214 219 220;
+  --accent: 6 104 225;
+}
+
+/* Optional: kill transitions until theme is ready */
+html:not([data-theme-ready]) * {
+  transition: none !important;
+}
+
+/* Paint full viewport from both roots using rgb(var(--…)) */
+html,
+body {
+  background: rgb(var(--background));
+  color: rgb(var(--foreground));
+}
+
+/* Your font choice */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
