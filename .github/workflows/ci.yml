@@ -1,7 +1,7 @@
 name: Frontend CI
 on:
   pull_request:
-    branches: [ "main" ]
+    branches: ["main"]
 
 defaults:
   run:
@@ -17,12 +17,11 @@ jobs:
         with:
           node-version-file: 'frontend/.nvmrc'
 
-      # Install pnpm CLI (v10)
       - uses: pnpm/action-setup@v4
         with:
           version: 10
 
-      # Cache pnpm store (fast & reliable)
+      # pnpm store cache (good as-is)
       - uses: actions/cache@v4
         with:
           path: ~/.pnpm-store
@@ -31,5 +30,11 @@ jobs:
             ${{ runner.os }}-pnpm-store-
 
       - run: pnpm install --frozen-lockfile
+
+      # NEW: fail if files aren’t formatted
+      - run: pnpm format:check
+
+      # Stricter lint (fails on warnings)
       - run: pnpm lint
+
       - run: pnpm build
