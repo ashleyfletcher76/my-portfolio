@@ -16,7 +16,7 @@ export default function NavBar() {
   }, [open]);
 
   return (
-    <header className="flex items-center gap-3 p-4">
+    <header className="fixed inset-x-0 top-0 z-40 flex h-12 items-center justify-between px-2">
       <div className="font-semibold">Ashley Fletcher</div>
 
       {/* Desktop (md+) */}
@@ -24,31 +24,35 @@ export default function NavBar() {
         <NavLinks />
       </nav>
       <div className="ml-auto flex items-center gap-3">
-        <LanguageSwitch />
-        <ThemeToggle />
         {/* Mobile (<= md) */}
-        <button
-          ref={btnRef}
-          type="button"
-          aria-label="Open menu"
-          aria-haspopup="dialog"
-          aria-expanded={open}
-          onClick={() => setOpen(true)}
-          className="border-border inline-flex size-10 items-center justify-center rounded-lg border md:hidden"
-        >
-          <span className="sr-only">Open menu</span>
-          <div className="space-y-1.5">
-            <span className="block h-0.5 w-6 bg-current"></span>
-            <span className="block h-0.5 w-6 bg-current"></span>
-            <span className="block h-0.5 w-6 bg-current"></span>
-          </div>
-        </button>
+        {!open && (
+          <>
+            <LanguageSwitch />
+            <ThemeToggle />
+            <button
+              ref={btnRef}
+              type="button"
+              aria-label="Open menu"
+              aria-haspopup="dialog"
+              aria-expanded={open}
+              onClick={() => setOpen(true)}
+              className="border-border mt-2 inline-flex size-10 items-center justify-center rounded-lg border md:mt-0 md:hidden"
+            >
+              <span className="sr-only">Open menu</span>
+              <div className="space-y-1.5">
+                <span className="block h-0.5 w-6 bg-current"></span>
+                <span className="block h-0.5 w-6 bg-current"></span>
+                <span className="block h-0.5 w-6 bg-current"></span>
+              </div>
+            </button>
+          </>
+        )}
 
         {/* <LanguageSwitch />
             <ThemeToggle /> */}
         <MobileMenu open={open} onClose={() => setOpen(false)}>
           <NavLinks onItemClick={() => setOpen(false)} />
-          <div className="border-border mt-4 border-t" />
+
           <div className="flex items-center justify-between px-4"></div>
         </MobileMenu>
       </div>

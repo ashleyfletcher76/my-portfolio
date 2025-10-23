@@ -2,17 +2,21 @@
 
 import { useTranslations } from 'next-intl';
 
+import { Link } from '@/i18n/routing';
+
+type Route = '/' | '/about' | '/education' | '/projects' | '/contact';
+
 export function NavLinks({ onItemClick }: { onItemClick?: () => void }) {
   const t = useTranslations('Navigation');
-  const item = (href: string, label: string) => (
-    <a
+  const item = (href: Route, label: string) => (
+    <Link
       key={href}
       href={href}
-      className="hover:bg-accent rounded-lg px-4 py-3"
+      className="hover:bg-muted focus-visible:ring-accent/40 rounded-lg px-4 py-3 focus-visible:ring-2 focus-visible:outline-none"
       onClick={onItemClick}
     >
       {label}
-    </a>
+    </Link>
   );
 
   return (

@@ -23,7 +23,7 @@ export default async function LocaleLayout({
 
   return (
     <html lang={locale} suppressHydrationWarning className="h-full">
-      <body className="bg-background text-foreground min-h-screen transition-colors duration-300">
+      <body className="bg-background text-foreground min-h-dvh transition-colors duration-300">
         <ThemeProvider
           attribute="class"
           defaultTheme="system"

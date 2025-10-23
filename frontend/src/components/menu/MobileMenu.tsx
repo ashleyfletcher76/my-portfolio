@@ -22,7 +22,6 @@ export function MobileMenu({
 
   return (
     <div role="dialog" aria-modal="true" className="fixed inset-0 z-50 md:hidden" onClick={onClose}>
-      <div className="absolute inset-0 bg-black/40 backdrop-blur-[1px]" />
       <aside
         className="bg-background animate-in slide-in-from-right absolute inset-y-0 right-0 flex w-34 max-w-[90vw] translate-x-0 flex-col py-4 shadow-xl duration-200"
         onClick={(e) => e.stopPropagation()}

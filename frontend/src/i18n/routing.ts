@@ -5,7 +5,7 @@ export const routing = defineRouting({
   locales: ['en', 'de'],
 
   defaultLocale: 'en',
-  localePrefix: 'as-needed',
+  // localePrefix: 'as-needed',
   pathnames: {
     '/': {
       en: '/',
@@ -14,6 +14,18 @@ export const routing = defineRouting({
     '/contact': {
       en: '/contact',
       de: '/kontakt',
+    },
+    '/about': {
+      en: '/about',
+      de: '/ueber', // adjust to your actual German path
+    },
+    '/education': {
+      en: '/education',
+      de: '/ausbildung', // adjust as needed
+    },
+    '/projects': {
+      en: '/projects',
+      de: '/projekte', // adjust as needed
     },
   },
 });

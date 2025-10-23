@@ -1,6 +1,6 @@
 import { Link } from '@/i18n/routing';
 
-export default function ContactPage() {
+export default function EducationPage() {
   return (
     <div className="min-v-dvh flex h-[calc(100dvh-3rem)] items-center justify-center">
       <Link href="/">{'HomePage'}</Link>
