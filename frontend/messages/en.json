@@ -1,7 +1,8 @@
 {
   "HomePage": {
     "title": "Hello world!",
-    "contact": "Go to the contact page"
+    "subtitle": "I build reliable backends and clean frontends using Java, Kotlin, and React.",
+    "downloadCV": "Download CV"
   },
   "Navigation": {
     "menu": "Menu",

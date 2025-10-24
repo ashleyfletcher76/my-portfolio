@@ -1,7 +1,8 @@
 {
   "HomePage": {
     "title": "Hallo Welt!",
-    "contact": "Zur Kontaktseite gehen"
+    "subtitle": "Ich entwickle zuverlässige Backends und klare Frontends mit Java, Kotlin und React.",
+    "downloadCV": "Lebenslauf herunterladen"
   },
   "Navigation": {
     "menu": "Menü",

@@ -1,8 +1,8 @@
 'use client';
 
-import { Sun, Moon } from 'lucide-react';
 import { useTheme } from 'next-themes';
 import { useEffect, useState } from 'react';
+import { FaSun, FaMoon } from 'react-icons/fa';
 
 export default function ThemeToggle() {
   const { resolvedTheme, setTheme } = useTheme();
@@ -27,14 +27,12 @@ export default function ThemeToggle() {
       className={`relative flex h-7 w-[3.75rem] items-center justify-between rounded-full bg-gray-200 p-1 transition-colors duration-300 focus:outline-none focus-visible:ring-2 focus-visible:ring-emerald-500 dark:bg-gray-700`}
     >
       {/* Icons */}
-      <Sun
+      <FaSun
         className={`pointer-events-none absolute left-2 z-10 h-4 w-4 text-amber-700 transition-opacity duration-200 dark:text-amber-100 ${isDark ? 'opacity-50' : 'opacity-100'} `}
-        strokeWidth={2.25}
         aria-hidden
       />
-      <Moon
+      <FaMoon
         className={`pointer-events-none absolute right-2 z-10 h-4 w-4 text-slate-600 transition-opacity duration-200 dark:text-indigo-200 ${isDark ? 'opacity-100' : 'opacity-50'} `}
-        strokeWidth={2.25}
         aria-hidden
       />
 
