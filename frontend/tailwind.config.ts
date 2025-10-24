@@ -16,6 +16,21 @@ export default {
         border: 'rgb(var(--border) / <alpha-value>)',
         accent: 'rgb(var(--accent) / <alpha-value>)',
       },
+      keyframes: {
+        scrollX: {
+          '0%': { transform: 'translateX(0)' },
+          '100%': { transform: 'translateX(-50%)' }, // moves left by half (because we duplicate content)
+        },
+        wobble: {
+          '0%,100%': { transform: 'rotate(0deg)' },
+          '50%': { transform: 'rotate(6deg)' },
+        },
+      },
+      animation: {
+        'scroll-x': 'scrollX 20s linear infinite',
+        'wobble-slow': 'wobble 4s ease-in-out infinite',
+        'spin-slower': 'spin 12s linear infinite',
+      },
     },
   },
   plugins: [],
