@@ -29,12 +29,10 @@ export default function ThemeToggle() {
       {/* Icons */}
       <FaSun
         className={`pointer-events-none absolute left-2 z-10 h-4 w-4 text-amber-700 transition-opacity duration-200 dark:text-amber-100 ${isDark ? 'opacity-50' : 'opacity-100'} `}
-        strokeWidth={2.25}
         aria-hidden
       />
       <FaMoon
         className={`pointer-events-none absolute right-2 z-10 h-4 w-4 text-slate-600 transition-opacity duration-200 dark:text-indigo-200 ${isDark ? 'opacity-100' : 'opacity-50'} `}
-        strokeWidth={2.25}
         aria-hidden
       />
 

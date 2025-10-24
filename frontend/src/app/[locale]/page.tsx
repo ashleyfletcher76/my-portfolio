@@ -22,7 +22,7 @@ export default async function HomePage() {
         <a
           href="/resume/AshleyFletcherResume.pdf"
           download
-          className="hover:bg-accent mt-4 inline-block rounded-lg border px-4 py-2 text-sm transition hover:text-white"
+          className="hover:bg-accent mt-4 inline-flex items-center gap-2 rounded-lg border px-4 py-2 text-sm transition"
         >
           <FiDownload className="h-4 w-4" />
           {t('downloadCV')}
