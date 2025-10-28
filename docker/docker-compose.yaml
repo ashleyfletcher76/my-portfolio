@@ -3,10 +3,7 @@ services:
   backend-service:
     build: ./../backend
     container_name: backend-service
-    healthcheck:
-      test: [ "CMD-SHELL", "curl -k -f http://localhost:8080/actuator/health || exit 1" ]
-      interval: 10s
-      timeout: 5s
-      retries: 5
+    environment:
+      API_KEY_GIT: ${API_KEY_GIT}
     ports:
       - "8080:8080"

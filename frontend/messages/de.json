@@ -2,7 +2,13 @@
   "HomePage": {
     "title": "Hallo Welt!",
     "subtitle": "Ich entwickle zuverlässige Backends und klare Frontends mit Java, Kotlin und React.",
-    "downloadCV": "Lebenslauf herunterladen"
+    "downloadCVEN": "Lebenslauf (EN) herunterladen",
+    "downloadCVDE": "Lebenslauf (DE) herunterladen",
+    "socialsLabel": "Social-Profile",
+    "heading": "Neueste Projektaktualisierung",
+    "lastUpdated": "Zuletzt aktualisiert:",
+    "noDescription": "Keine Beschreibung vorhanden.",
+    "viewOnGitHub": "Auf GitHub ansehen:"
   },
   "Navigation": {
     "menu": "Menü",
