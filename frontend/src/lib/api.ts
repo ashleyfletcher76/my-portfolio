@@ -25,14 +25,13 @@ export type LatestProject = {
 };
 
 export async function getLatestProject(): Promise<LatestProject | null> {
-  const url = `${API_BASE}/api/projects/latest`;
   try {
     const project = await apiGet<LatestProject>('/api/projects/latest');
     return project;
   } catch (err: unknown) {
     const message = err instanceof Error ? err.message : JSON.stringify(err);
     console.error(
-      `[getLatestProject] Failed to fetch from ${url}\nEnvironment: ${process.env.NODE_ENV}\nError: ${message}`,
+      `[getLatestProject] Failed to fetch from ${API_BASE}/api/projects/latest\nEnvironment: ${process.env.NODE_ENV}\nError: ${message}`,
     );
     return null;
   }
