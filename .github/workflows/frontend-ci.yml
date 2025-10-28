@@ -10,6 +10,9 @@ defaults:
 jobs:
   build:
     runs-on: ubuntu-latest
+    env:
+      NEXT_PUBLIC_BACKEND_URL: ${{ secrets.NEXT_PUBLIC_BACKEND_URL }}
+      NEXT_TELEMETRY_DISABLED: 1
     steps:
       - uses: actions/checkout@v4
 
@@ -21,7 +24,7 @@ jobs:
         with:
           version: 10
 
-      # pnpm store cache (good as-is)
+      # pnpm store cache
       - uses: actions/cache@v4
         with:
           path: ~/.pnpm-store
@@ -30,11 +33,6 @@ jobs:
             ${{ runner.os }}-pnpm-store-
 
       - run: pnpm install --frozen-lockfile
-
-      # NEW: fail if files aren’t formatted
       - run: pnpm format:check
-
-      # Stricter lint (fails on warnings)
       - run: pnpm lint
-
       - run: pnpm build
