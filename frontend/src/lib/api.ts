@@ -10,6 +10,9 @@ export async function apiGet<T>(path: string, init?: RequestInit): Promise<T> {
     ...init,
     headers: { Accept: 'application/json', ...(init?.headers || {}) },
   });
-  if (!res.ok) throw new Error(`GET ${url} -> ${res.status}`);
+  if (!res.ok) {
+    const body = await res.text();
+    throw new Error(`GET ${url} -> ${res.status} ${res.statusText}: ${body}`);
+  }
   return res.json() as Promise<T>;
 }
