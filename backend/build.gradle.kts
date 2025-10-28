@@ -30,3 +30,6 @@ tasks.withType<Test> {
 	useJUnitPlatform()
 }
 
+springBoot {
+    buildInfo()
+}
