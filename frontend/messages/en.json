@@ -5,12 +5,10 @@
     "downloadCVEN": "Download CV (EN)",
     "downloadCVDE": "Download CV (DE)",
     "socialsLabel": "Social profiles",
-    "latestUpdate": {
-      "heading": "Latest project update",
-      "lastUpdated": "Last updated:",
-      "noDescription": "No description provided.",
-      "viewOnGitHub": "View on GitHub:"
-    }
+    "heading": "Latest project update",
+    "lastUpdated": "Last updated:",
+    "noDescription": "No description provided.",
+    "viewOnGitHub": "View on GitHub:"
   },
   "Navigation": {
     "menu": "Menu",

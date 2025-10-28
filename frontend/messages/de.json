@@ -5,12 +5,10 @@
     "downloadCVEN": "Lebenslauf (EN) herunterladen",
     "downloadCVDE": "Lebenslauf (DE) herunterladen",
     "socialsLabel": "Social-Profile",
-    "latestUpdate": {
-      "heading": "Neueste Projektaktualisierung",
-      "lastUpdated": "Zuletzt aktualisiert:",
-      "noDescription": "Keine Beschreibung vorhanden.",
-      "viewOnGitHub": "Auf GitHub ansehen:"
-    }
+    "heading": "Neueste Projektaktualisierung",
+    "lastUpdated": "Zuletzt aktualisiert:",
+    "noDescription": "Keine Beschreibung vorhanden.",
+    "viewOnGitHub": "Auf GitHub ansehen:"
   },
   "Navigation": {
     "menu": "Menü",

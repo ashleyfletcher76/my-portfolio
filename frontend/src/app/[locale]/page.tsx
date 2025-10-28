@@ -58,7 +58,7 @@ export default async function HomePage() {
       {latest && (
         <section aria-labelledby="latest-update-heading" className="w-full max-w-xl text-center">
           <h2 id="latest-update-heading" className="mb-3 text-2xl font-semibold">
-            {t('latestUpdate.heading')}
+            {t('heading')}
           </h2>
 
           <div className="rounded-2xl border p-4">
@@ -67,16 +67,14 @@ export default async function HomePage() {
               target="_blank"
               rel="noopener noreferrer"
               className="hover:text-accent inline-flex items-center justify-center gap-2 text-lg font-semibold underline decoration-dotted underline-offset-4 hover:decoration-solid"
-              aria-label={`${t('latestUpdate.viewOnGitHub')} ${latest.name}`}
+              aria-label={`${t('viewOnGitHub')} ${latest.name}`}
             >
               {latest.name}
               <FiExternalLink className="h-4 w-4" aria-hidden="true" />
             </a>
-            <p className="text-muted foreground mt-3">
-              {latest.description || t('latestUpdate.noDescription')}
-            </p>
+            <p className="text-muted-foreground mt-3">{latest.description || t('noDescription')}</p>
             <p className="text-muted-foreground mt-3 text-xs">
-              {t('latestUpdate.lastUpdated')} {formatIso(latest.lastUpdatedIso)}
+              {t('lastUpdated')} {formatIso(latest.lastUpdatedIso)}
             </p>
           </div>
         </section>

@@ -10,13 +10,14 @@ import reactor.core.publisher.Mono;
 
 @Service
 public class LatestProjectService {
+
   private final GithubClient githubClient;
+  private final String user;
 
-  @Value("${github.user:ashleyfletcher76}")
-  String user;
-
-  public LatestProjectService(GithubClient githubClient) {
+  public LatestProjectService(
+      GithubClient githubClient, @Value("${github.user:ashleyfletcher76}") String user) {
     this.githubClient = githubClient;
+    this.user = user;
   }
 
   public Mono<LatestProjectDto> latest() {
