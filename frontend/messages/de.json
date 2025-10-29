@@ -17,5 +17,10 @@
     "education": "Ausbildung",
     "projects": "Projekte",
     "contact": "Kontakt"
+  },
+  "AllProjects": {
+    "allProjects": "Alle Projekte",
+    "noDescription": "Keine Beschreibung vorhanden.",
+    "viewOnGitHub": "Auf GitHub ansehen:"
   }
 }
