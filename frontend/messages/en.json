@@ -17,5 +17,10 @@
     "education": "Education",
     "projects": "Projects",
     "contact": "Contact"
+  },
+  "AllProjects": {
+    "allProjects": "All Projects",
+    "noDescription": "No description provided.",
+    "viewOnGitHub": "View on GitHub:"
   }
 }

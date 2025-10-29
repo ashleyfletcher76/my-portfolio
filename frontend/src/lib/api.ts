@@ -17,12 +17,24 @@ export async function apiGet<T>(path: string, init?: RequestInit): Promise<T> {
   return res.json() as Promise<T>;
 }
 
+export type AllProject = {
+  name: string;
+  description: string;
+  language: string;
+  lastUpdatedIso: string;
+  url: string;
+};
+
 export type LatestProject = {
   name: string;
   description: string;
   url: string;
   lastUpdatedIso: string;
 };
+
+export async function getAllProjects(init?: RequestInit): Promise<AllProject[]> {
+  return apiGet<AllProject[]>('/api/all-projects', init);
+}
 
 export async function getLatestProject(): Promise<LatestProject | null> {
   try {
