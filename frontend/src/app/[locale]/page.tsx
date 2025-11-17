@@ -1,6 +1,8 @@
+import Image from 'next/image';
 import { getLocale, getTranslations } from 'next-intl/server';
-import { FiDownload, FiExternalLink } from 'react-icons/fi';
 
+import CVCard from '@/components/CVCard';
+import LatestProjectCard from '@/components/LatestProjectCard';
 import SkillsBar from '@/components/SkillsBar';
 import Socials from '@/components/Socials';
 import { getLatestProject, type LatestProject } from '@/lib/api';
@@ -11,77 +13,89 @@ export default async function HomePage() {
   const latest: LatestProject | null = await getLatestProject();
 
   const formatIso = (iso: string) =>
-    new Intl.DateTimeFormat(locale, { dateStyle: 'medium', timeStyle: 'short' }).format(
-      new Date(iso),
-    );
+    new Intl.DateTimeFormat(locale, {
+      dateStyle: 'medium',
+      timeStyle: 'short',
+    }).format(new Date(iso));
 
   return (
-    <main className="flex min-h-dvh flex-col items-center justify-center gap-10 px-4 text-center">
-      {/* Hero text */}
-      <section className="space-y-4">
-        <h1 className="text-4xl font-semibold tracking-tight">{t('title')}</h1>
+    <main className="flex min-h-dvh flex-col items-center gap-12 px-4 pt-28 pb-16 md:pt-32">
+      {/* Hero */}
+      <section className="flex w-full max-w-4xl flex-col items-center gap-10 md:flex-row md:items-center md:justify-between md:text-left">
+        {/* Hero text */}
+        <div className="text-center md:max-w-xl md:text-left">
+          <h1 className="text-4xl font-semibold tracking-tight sm:text-5xl">{t('title')}</h1>
 
-        <p className="text-muted-foreground max-w-prose">{t('subtitle')}</p>
+          <p className="text-muted-foreground mt-4 max-w-prose text-lg md:max-w-none">
+            {t('subtitle')}
+          </p>
 
-        {/* Socials */}
-        <div className="pt-2">
-          <div className="text-muted-foreground mb-1 text-xs tracking-wide uppercase">
-            {t('socialsLabel')}
-          </div>
-          <div className="flex justify-center gap-4">
-            <Socials />
+          {/* CV buttons row */}
+          <div className="mt-6 flex flex-wrap gap-2">
+            <CVCard
+              flag="🇬🇧"
+              title={t('downloadCVEN')}
+              fileHref="/resume/AshleyFletcherResume.pdf"
+              previewHref="/resume/AshleyFletcherResume.pdf"
+              downloadLabel={t('download')}
+              previewLabel={t('preview')}
+            />
+            <CVCard
+              flag="🇩🇪"
+              title={t('downloadCVDE')}
+              fileHref="/resume/AshleyFletcherLebenslauf.pdf"
+              previewHref="/resume/AshleyFletcherLebenslauf.pdf"
+              downloadLabel={t('download')}
+              previewLabel={t('preview')}
+            />
           </div>
         </div>
 
-        {/* CV buttons row */}
-        <div className="mt-2 flex flex-wrap items-center justify-center gap-3">
-          <a
-            href="/resume/AshleyFletcherResume.pdf"
-            download
-            className="hover:bg-accent mt-4 inline-flex items-center gap-2 rounded-lg border px-4 py-2 text-sm transition"
-          >
-            <FiDownload className="h-4 w-4" />
-            {t('downloadCVEN')}
-          </a>
-          <a
-            href="/resume/AshleyFletcherLebenslauf.pdf"
-            download
-            className="hover:bg-accent mt-4 inline-flex items-center gap-2 rounded-lg border px-4 py-2 text-sm transition"
-          >
-            <FiDownload className="h-4 w-4" />
-            {t('downloadCVDE')}
-          </a>
+        {/* Portrait */}
+        <div className="flex shrink-0 flex-col items-center">
+          <div className="bg-background relative h-52 w-52 overflow-hidden rounded-full border shadow-md md:h-60 md:w-60">
+            <Image
+              src="/photos/AshleyFletcher.jpg"
+              alt="Portrait of Ashley Fletcher"
+              fill
+              className="object-cover"
+              sizes="(min-width: 768px) 240px, 208px"
+              priority
+            />
+          </div>
+          {/* Socials */}
+          <div className="mt-4 space-y-2 text-center">
+            <div className="text-muted-foreground text-xs tracking-wide uppercase">
+              {t('socialsLabel')}
+            </div>
+            <div className="flex justify-center gap-4">
+              <Socials />
+            </div>
+          </div>
         </div>
       </section>
 
       {/* Latest project */}
       {latest && (
-        <section aria-labelledby="latest-update-heading" className="w-full max-w-xl text-center">
-          <h2 id="latest-update-heading" className="mb-3 text-2xl font-semibold">
+        <section aria-labelledby="latest-update-heading" className="w-full max-w-3xl">
+          <h2 id="latest-update-heading" className="mb-4 text-center text-2xl font-semibold">
             {t('heading')}
           </h2>
 
-          <div className="rounded-2xl border p-4">
-            <a
-              href={latest.url}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hover:text-accent inline-flex items-center justify-center gap-2 text-lg font-semibold underline decoration-dotted underline-offset-4 hover:decoration-solid"
-              aria-label={`${t('viewOnGitHub')} ${latest.name}`}
-            >
-              {latest.name}
-              <FiExternalLink className="h-4 w-4" aria-hidden="true" />
-            </a>
-            <p className="text-muted-foreground mt-3">{latest.description || t('noDescription')}</p>
-            <p className="text-muted-foreground mt-3 text-xs">
-              {t('lastUpdated')} {formatIso(latest.lastUpdatedIso)}
-            </p>
-          </div>
+          <LatestProjectCard
+            name={latest.name}
+            url={latest.url}
+            description={latest.description || t('noDescription')}
+            lastUpdated={formatIso(latest.lastUpdatedIso)}
+            viewLabel={t('viewOnGitHub')}
+          />
         </section>
       )}
 
-      {/* Skills bar */}
-      <SkillsBar />
+      {/* Skills */}
+      <section className="w-full max-w-4xl pt-6">
+        <SkillsBar />
+      </section>
     </main>
   );
 }

@@ -12,7 +12,7 @@ export function NavLinks({ onItemClick }: { onItemClick?: () => void }) {
     <Link
       key={href}
       href={href}
-      className="hover:bg-muted focus-visible:ring-accent/40 rounded-lg px-4 py-3 focus-visible:ring-2 focus-visible:outline-none"
+      className="hover:bg-muted focus-visible:ring-primary rounded-lg px-4 py-3 focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:outline-none"
       onClick={onItemClick}
     >
       {label}

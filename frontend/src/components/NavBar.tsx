@@ -11,16 +11,18 @@ export default function NavBar() {
   const [open, setOpen] = useState(false);
   const btnRef = useRef<HTMLButtonElement>(null);
 
+  const MENU_ID = 'mobile-menu';
+
   useEffect(() => {
     if (!open) btnRef.current?.focus();
   }, [open]);
 
   return (
-    <header className="fixed inset-x-0 top-0 z-40 flex h-12 items-center justify-between px-2">
+    <header className="navbar fixed inset-x-0 top-0 z-40 flex h-12 items-center justify-between px-2 text-2xl">
       <div className="font-semibold">Ashley Fletcher</div>
 
       {/* Desktop (md+) */}
-      <nav className="hidden items-center gap-4 md:flex">
+      <nav className="hidden items-center gap-4 text-2xl md:flex">
         <NavLinks />
       </nav>
       <div className="ml-auto flex items-center gap-3">
@@ -34,6 +36,7 @@ export default function NavBar() {
               type="button"
               aria-label="Open menu"
               aria-haspopup="dialog"
+              aria-controls={MENU_ID}
               aria-expanded={open}
               onClick={() => setOpen(true)}
               className="border-border mt-2 inline-flex size-10 items-center justify-center rounded-lg border md:mt-0 md:hidden"
@@ -50,7 +53,7 @@ export default function NavBar() {
 
         {/* <LanguageSwitch />
             <ThemeToggle /> */}
-        <MobileMenu open={open} onClose={() => setOpen(false)}>
+        <MobileMenu id={MENU_ID} open={open} onClose={() => setOpen(false)}>
           <NavLinks onItemClick={() => setOpen(false)} />
 
           <div className="flex items-center justify-between px-4"></div>
