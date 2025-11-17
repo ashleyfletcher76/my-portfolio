@@ -14,7 +14,7 @@ export default function LatestProjectCard({
   lastUpdated?: string;
   viewLabel: string;
 }) {
-  const t = useTranslations('latestProject');
+  const t = useTranslations('HomePage');
   return (
     <div className="rounded-2xl border p-4">
       <a

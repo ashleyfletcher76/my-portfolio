@@ -28,7 +28,6 @@ export default function SkillsBar() {
             <div
               className="flex items-center justify-center rounded-2xl border border-white/10 bg-gradient-to-b from-white/10 to-transparent px-6 py-4 shadow-sm backdrop-blur-sm hover:shadow-md dark:from-white/5"
               title={label}
-              aria-hidden={false}
             >
               <Icon aria-hidden className={`h-8 w-8 ${color}`} />
             </div>

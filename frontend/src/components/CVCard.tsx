@@ -28,7 +28,7 @@ export default function CVCard({
         <a
           href={fileHref}
           download
-          className="bg-accent px-0.9 text-accent-foreground focus-visible:ring-accent/40 inline-flex items-center gap-2 rounded-md py-1 text-xs font-semibold hover:brightness-95 focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2"
+          className="bg-accent text-accent-foreground focus-visible:ring-accent/40 inline-flex items-center gap-2 rounded-md px-1 py-1 text-xs font-semibold hover:brightness-95 focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2"
         >
           <FiDownload className="h-3 w-3" />
           {downloadLabel}

@@ -26,7 +26,9 @@ export function MobileMenu({
   const panelRef = useRef<HTMLElement | null>(null);
 
   useEffect(() => {
-    if (open) panelRef.current?.focus();
+    if (open && panelRef.current) {
+      panelRef.current.focus({ preventScroll: true });
+    }
   }, [open]);
 
   useAriaHideSiblings(open);
@@ -34,12 +36,7 @@ export function MobileMenu({
   if (!open) return null;
 
   return (
-    <div
-      data-mobile-menu
-      className="fixed inset-0 z-50 md:hidden"
-      onClick={onClose}
-      aria-hidden={false}
-    >
+    <div data-mobile-menu className="fixed inset-0 z-50 md:hidden" onClick={onClose}>
       {/* backdrop */}
       <div className="absolute inset-0 bg-white/20 backdrop-blur-sm dark:bg-black/40" />
       <aside
@@ -48,7 +45,7 @@ export function MobileMenu({
         aria-modal="true"
         aria-labelledby="mobile-menu-title"
         tabIndex={-1}
-        className="bg-background animate-in slide-in-from-right text-slate=900 dark:text-foreground absolute inset-y-0 right-0 flex w-[34rem] max-w-[90vw] translate-x-0 flex-col py-4 text-4xl shadow-xl duration-200"
+        className="bg-background animate-in slide-in-from-right dark:text-foreground absolute inset-y-0 right-0 flex w-[34rem] max-w-[90vw] translate-x-0 flex-col py-4 text-4xl text-slate-900 shadow-xl duration-200"
         onClick={(e) => e.stopPropagation()}
         ref={panelRef}
         onKeyDown={createTrapTabHandler(panelRef)}

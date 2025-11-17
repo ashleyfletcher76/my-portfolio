@@ -8,7 +8,7 @@
     "downloadCVDE": "Download CV (DE)",
     "socialsLabel": "Social profiles",
     "heading": "Latest project update",
-    "lastUpdated": "Last updated:",
+    "lastUpdated": "Last updated: ",
     "noDescription": "No description provided.",
     "viewOnGitHub": "View on GitHub:",
     "skillsPhrase": "Tech I use"
@@ -25,8 +25,5 @@
     "allProjects": "All Projects",
     "noDescription": "No description provided.",
     "viewOnGitHub": "View on GitHub:"
-  },
-  "latestProject": {
-    "lastUpdated": "Last updated: "
   }
 }
