@@ -1,14 +1,17 @@
 {
   "HomePage": {
     "title": "Hello world!",
-    "subtitle": "I build reliable backends and clean frontends using Java, Kotlin, and React.",
+    "subtitle": "Mostly a backend developer — I still try my best to craft tidy frontends with Java, Kotlin, and a splash of React magic.",
+    "download": "Download",
+    "preview": "Preview",
     "downloadCVEN": "Download CV (EN)",
     "downloadCVDE": "Download CV (DE)",
     "socialsLabel": "Social profiles",
     "heading": "Latest project update",
-    "lastUpdated": "Last updated:",
+    "lastUpdated": "Last updated: ",
     "noDescription": "No description provided.",
-    "viewOnGitHub": "View on GitHub:"
+    "viewOnGitHub": "View on GitHub:",
+    "skillsPhrase": "Tech I use"
   },
   "Navigation": {
     "menu": "Menu",

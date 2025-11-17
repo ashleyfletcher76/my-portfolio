@@ -25,13 +25,13 @@ export default function LanguageSwitch() {
     >
       {/* Label text */}
       <span
-        className={`absolute left-2 z-10 text-xs font-medium transition-colors duration-200 ${isDE ? 'text-gray-800 dark:text-gray-300' : 'text-white'} `}
+        className={`absolute left-1.5 z-10 text-xs font-medium transition-colors duration-200 ${isDE ? 'text-gray-800 dark:text-gray-300' : 'text-white'} `}
       >
         EN
       </span>
 
       <span
-        className={`absolute right-2 z-10 text-xs font-medium transition-colors duration-200 ${isDE ? 'text-white' : 'text-gray-800 dark:text-gray-300'} `}
+        className={`absolute right-1.5 z-10 text-xs font-medium transition-colors duration-200 ${isDE ? 'text-white' : 'text-gray-800 dark:text-gray-300'} `}
       >
         DE
       </span>
