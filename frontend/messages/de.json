@@ -25,5 +25,12 @@
     "allProjects": "Alle Projekte",
     "noDescription": "Keine Beschreibung vorhanden.",
     "viewOnGitHub": "Auf GitHub ansehen:"
+  },
+  "AboutMe": {
+    "me": "Über mich",
+    "farming": "Ich bin auf Bauernhöfen aufgewachsen und habe mehrere Jahre in der Landwirtschaft gearbeitet, bevor ich 2019 nach Deutschland gezogen bin. Diese Zeit hat meine Arbeitsweise stark geprägt – lange Arbeitstage, praktisches Problemlösen und die Fähigkeit, ruhig zu bleiben, wenn Dinge nicht wie geplant laufen.",
+    "photography": "Nachdem ich in Deutschland angekommen war, begann ich als freiberuflicher Fotograf zu arbeiten. Ein kleines Ein-Personen-Unternehmen zu führen, hat mir Verantwortungsbewusstsein beigebracht, die Arbeit mit Kunden nähergebracht und gezeigt, wie man etwas Eigenes von Grund auf aufbaut.",
+    "42": "Mit der Zeit verschob sich mein Interesse immer mehr in Richtung Technik. Ich entschied mich für eine Umschulung zum Softwareentwickler und begann meine Ausbildung an der 42 Heilbronn, wo ich C, C++, Algorithmen und Systemprogrammierung in einem peer-getriebenen Lernumfeld gelernt habe.",
+    "schwarz": "Kürzlich habe ich mein Praktikum bei Schwarz IT abgeschlossen, wo ich mit Kotlin, Java, TypeScript, Docker und Microservice-Architekturen gearbeitet habe. Dort wurde mir endgültig klar, dass Softwareentwicklung genau der Bereich ist, in dem ich meine berufliche Zukunft sehe."
   }
 }

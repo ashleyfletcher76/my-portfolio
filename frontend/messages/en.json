@@ -25,5 +25,12 @@
     "allProjects": "All Projects",
     "noDescription": "No description provided.",
     "viewOnGitHub": "View on GitHub:"
+  },
+  "AboutMe": {
+    "me": "About Me",
+    "farming": "I grew up working on farms and spent several years in agriculture before moving to Germany in 2019. Those years shaped a lot of my work ethic—long hours, hands-on problem-solving, and staying calm when things don’t go as planned.",
+    "photography": "After settling in Germany, I started freelancing in photography. Running a small one-person business taught me responsibility, working with clients, and building something from scratch.",
+    "42": "Over time, my interests shifted toward tech. I retrained as a software developer and joined 42 Heilbronn, where I learned C, C++, algorithms, and system programming in a peer-driven learning environment.",
+    "schwarz": "Most recently, I completed my internship at Schwarz IT, working with Kotlin, Java, TypeScript, Docker, and microservice architectures. It confirmed that software development is exactly where I want to build my career."
   }
 }
