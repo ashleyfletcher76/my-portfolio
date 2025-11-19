@@ -4,7 +4,7 @@ import { useTranslations } from 'next-intl';
 export default function AboutPage() {
   const t = useTranslations('AboutMe');
   return (
-    <div className="mx-auto max-w-4xl space-y-16 px-4 pt-18">
+    <div className="mx-auto max-w-4xl space-y-16 px-4 pt-16">
       <h1 className="text-center text-3xl font-semibold">{t('me')}</h1>
 
       {/* Farming Section */}
@@ -15,7 +15,7 @@ export default function AboutPage() {
 
         <div className="flex justify-center">
           <Image
-            src="/images/farming.jpg"
+            src="/images/about/farming.jpg"
             alt="Tractor"
             width={1200}
             height={800}
@@ -28,7 +28,7 @@ export default function AboutPage() {
       <section className="grid grid-cols-1 items-center gap-8 sm:grid-cols-2">
         <div className="flex justify-center">
           <Image
-            src="/images/photography.jpg"
+            src="/images/about/photography.jpg"
             alt="Camera"
             width={1200}
             height={800}
@@ -64,11 +64,11 @@ export default function AboutPage() {
       <section className="grid grid-cols-1 items-center gap-8 sm:grid-cols-2">
         <div className="flex justify-center">
           <Image
-            src="/images/computer.jpg"
+            src="/images/about/computer.jpg"
             alt="Computer"
             width={1200}
             height={800}
-            className="none h-auto w-full rounded-lg object-cover"
+            className="h-auto w-full rounded-lg object-cover"
           />
         </div>
 

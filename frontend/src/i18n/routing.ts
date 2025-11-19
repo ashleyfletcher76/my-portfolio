@@ -22,9 +22,17 @@ export const routing = defineRouting({
       en: '/education',
       de: '/ausbildung',
     },
+    '/experience': {
+      en: '/experience',
+      de: '/erfahrung',
+    },
     '/projects': {
       en: '/projects',
       de: '/projekte',
+    },
+    '/imprint': {
+      en: '/imprint',
+      de: '/impressum',
     },
   },
 });

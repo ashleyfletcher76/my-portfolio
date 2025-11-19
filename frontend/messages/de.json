@@ -1,7 +1,7 @@
 {
   "HomePage": {
     "title": "Hallo Welt!",
-    "subtitle": "Mehr Backend als Pixel‑Schubser — trotzdem bastle ich mit Java, Kotlin und einer Prise React an sauberen Frontends.",
+    "subtitle": "Mehr Backend als dev — trotzdem bastle ich mit Java, Kotlin und einer Prise React an sauberen Frontends.",
     "download": "Herunterladen",
     "preview": "Vorschau",
     "downloadCVEN": "Lebenslauf (EN) herunterladen",
@@ -18,8 +18,18 @@
     "home": "Startseite",
     "about": "Über mich",
     "education": "Ausbildung",
+    "experience": "Berufserfahrung",
     "projects": "Projekte",
-    "contact": "Kontakt"
+    "contact": "Kontakt",
+    "imprint": "Impressum"
+  },
+  "Footer": {
+    "credits": "Impressum & Bildnachweise",
+    "aboutStatement": "Auf der About‑Seite verwendete Bilder — von oben nach unten aufgelistet (42‑Logo ausgenommen)",
+    "educationStatement": "Auf der Education‑Seite verwendete Bilder — von oben nach unten aufgelistet",
+    "imprint": "Impressum",
+    "imageCredits": "Bildnachweise",
+    "attributionStatement": "Nachfolgend finden Sie die Bildnachweise für die auf dieser Website verwendeten Bilder. Zusätzliche Nachweise werden bei Bedarf ergänzt."
   },
   "AllProjects": {
     "allProjects": "Alle Projekte",

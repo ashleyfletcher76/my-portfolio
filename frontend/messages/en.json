@@ -18,8 +18,18 @@
     "home": "Home",
     "about": "About",
     "education": "Education",
+    "experience": "Work Experience",
     "projects": "Projects",
-    "contact": "Contact"
+    "contact": "Contact",
+    "imprint": "Imprint"
+  },
+  "Footer": {
+    "credits": "Imprint & Image Credits",
+    "aboutStatement": "Images used on About page — listed top to bottom (42 logo excluded)",
+    "educationStatement": "Images used on Education page — listed top to bottom",
+    "imprint": "Imprint",
+    "imageCredits": "Image Credits",
+    "attributionStatement": "Below are the image attributions for assets used on this website. Additional attributions will be added as needed."
   },
   "AllProjects": {
     "allProjects": "All Projects",
@@ -28,9 +38,53 @@
   },
   "AboutMe": {
     "me": "About Me",
-    "farming": "I grew up working on farms and spent several years in agriculture before moving to Germany in 2019. Those years shaped a lot of my work ethic—long hours, hands-on problem-solving, and staying calm when things don’t go as planned.",
-    "photography": "After settling in Germany, I started freelancing in photography. Running a small one-person business taught me responsibility, working with clients, and building something from scratch.",
-    "42": "Over time, my interests shifted toward tech. I retrained as a software developer and joined 42 Heilbronn, where I learned C, C++, algorithms, and system programming in a peer-driven learning environment.",
-    "schwarz": "Most recently, I completed my internship at Schwarz IT, working with Kotlin, Java, TypeScript, Docker, and microservice architectures. It confirmed that software development is exactly where I want to build my career."
+    "farming": "I grew up working on farms and spent several years in agriculture before moving to Germany in 2019. Those years shaped a lot of my work ethic through the long hours, hands-on problem-solving, and staying calm when things don’t go as planned.",
+    "photography": "After settling in Germany, alongside working on logisitics, I started freelancing in photography and videography. Running a small one-person business taught me responsibility, working with clients, and building something from scratch.",
+    "42": "Over time, my interests shifted toward tech. I retrained as a software developer and joined 42 Heilbronn, where I learned C, C++, Python, algorithms, and system programming in a peer-driven learning environment.",
+    "schwarz": "Most recently, I completed my internship at Schwarz IT, working with Kotlin, Vue.js(TypeScript), Docker, and microservice architectures. It confirmed that software development is exactly where I want to build my career."
+  },
+  "Education": {
+    "title": "Education",
+    "subtitle": "How I went from UK business college to peer-to-peer software engineering and backend development.",
+    "intro": "My education doesn’t follow a straight line. It goes from British secondary school and a practical business qualification to a peer-driven coding school and a backend-focused internship in Germany. This timeline gives some context to how I learned and how I like to work today.",
+    "timelineLabel": "Education timeline",
+
+    "ukSchoolYear": "Up to age 16",
+    "ukSchoolTitle": "School in the UK",
+    "ukSchoolBody": "I grew up in the UK and went through the standard British school system. After primary school (ages 5–11), students typically attend secondary school (ages 11–16), where they work towards GCSE exams. GCSEs are subject-based qualifications in areas like English, Maths and Science, plus chosen options such as Business, IT or foreign languages. This gave me a broad academic base and taught me to switch between subjects, manage multiple types of assignments and plan my learning independently.",
+    "ukSchoolImageAlt": "School books and classroom items representing UK secondary education",
+
+    "lewesYear": "16–18",
+    "lewesTitle": "Lewes College – BTEC Level 3 Business",
+    "lewesBody": "At 16 I moved to Lewes College, a further-education college, and completed a BTEC Level 3 in Business. A BTEC Level 3 is a practical, coursework-based qualification roughly equivalent to A-Levels or a Fachabitur in Germany. Instead of relying mainly on final exams, it focuses on continuous project work, assignments and presentations. This taught me to analyse real scenarios, plan small business concepts and communicate decisions clearly. These were early lessons in applied problem solving and responsible project work.",
+    "lewesImageAlt": "College campus scene symbolising further education and business studies",
+
+    "piscineYear": "2023",
+    "piscineTitle": "The 42 Piscine",
+    "piscineBody": "Before starting at 42, every student completes the Piscine. This is a four-week intensive selection program. There are no teachers, no lessons, and no structured guidance. You learn entirely by reading documentation, solving exercises, asking precise questions and supporting other participants. The days are long: coding C projects, learning basic shell commands, completing peer evaluations, debugging at night and managing pressure. For me, the Piscine confirmed that I enjoy this learning style. It was exhausting, but it built the habits I needed for the core curriculum.",
+    "piscineImageAlt": "Terminal windows and C code representing the Piscine programming bootcamp",
+
+    "fortyTwoIntroYear": "From 2023",
+    "fortyTwoIntroTitle": "42 School – a different way to learn programming",
+    "fortyTwoIntroBody": "After being accepted through the Piscine, I joined the full 42 curriculum. 42 is a tuition-free, peer-driven programming school that replaces traditional lectures with autonomy, collaboration and real problem-solving. There are no teachers or step-by-step instructions. Progress depends on reading documentation, experimenting, asking precise questions and reviewing the work of others. The curriculum begins with low-level C and C++, then expands step by step into algorithms, systems programming, networking and web technologies. Every project is followed by strict peer evaluations, where students are expected to explain their reasoning while the evaluator tests the student’s knowledge. The evaluator also tries to break the code through various methods. Alongside this, there are automated tests. Students must also complete five exams and cannot advance through the curriculum without passing these exams with full marks. The program rewards clear thinking, perseverance and the ability to learn independently — skills that have shaped how I now approach software development.",
+    "fortyTwoIntroImageAlt": "Stylised 42 logo and code editor representing the 42 school concept",
+    "fortyTwoHeilbronnSite": "Check out the official 42 Heilbronn website for more details",
+
+    "fortyTwoJourneyYear": "2023–2024",
+    "fortyTwoJourneyTitle": "My journey through the 42 core curriculum",
+    "fortyTwoJourneyBody": "“Working through the 42 curriculum transformed how I think about software. Early C projects taught me memory management, debugging strategies and how to analyse problems instead of guessing. As I advanced, I built tools such as libft, pipex and minishell, which required understanding Unix processes, file descriptors, signals, parsing and strict code quality expectations. Later, projects like ft_transcendence introduced me to networking, Docker, microservices and full-stack development. Throughout the program, I learned to explain my decisions clearly during peer evaluations, manage long projects independently and stay calm under pressure. This journey gave me a strong foundation for backend engineering and the confidence to approach new technologies with structure and discipline.”",
+    "fortyTwoJourneyImageAlt": "Terminal windows and project boards showing intensive programming work",
+
+    "internshipYear": "2024–2025",
+    "internshipTitle": "Internship at Schwarz IT",
+    "internshipBody": "As part of my time at 42, I completed an internship at Schwarz IT. I worked with Kotlin and TypeScript with a microserviced and multi-module based backend using the modern framework Vue.js for the frontend. My responsibilities included building REST APIs, contributing to multipe features within the codebase, working with Docker and CI/CD pipelines, and collaborating closely with senior engineers. The internship bridged the gap between the 42 project style and real-world product development: tickets, code reviews, deployments and teamwork across disciplines.",
+    "internshipCtaLabel": "Read more about my work experience",
+    "internshipImageAlt": "Developer workspace with multiple screens showing backend and frontend code",
+
+    "certsYear": "After the internship",
+    "certsTitle": "Continuing education and Spring Boot certificates",
+    "certsBody": "After the internship I am now continueing to build my backend foundations through structured online learning. I have already completed several Spring Boot certificates covering RESTful API design, testing with JUnit and Mockito, Spring Boot security and practical application architecture. These courses help me deepen my understanding, close knowledge gaps and approach backend development with more structure and discipline.",
+    "certsImageAlt": "Laptop and notes representing online courses and programming certificates",
+    "certsCtaLabel": "View my certificates"
   }
 }
