@@ -42,7 +42,7 @@ export const EDUCATION_TIMELINE_ITEMS: TimelineItemConfig[] = [
     yearKey: 'piscineYear',
     titleKey: 'piscineTitle',
     bodyKey: 'piscineBody',
-    bodyPointKeys: ['piscinePointOne', 'piscinePointTwo', 'picinePointThree'],
+    bodyPointKeys: ['piscinePointOne', 'piscinePointTwo', 'piscinePointThree'],
     imageAltKey: 'piscineImageAlt',
     imageSrc: '/images/education/piscine.jpg',
   },

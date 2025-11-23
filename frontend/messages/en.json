@@ -1,7 +1,7 @@
 {
   "HomePage": {
     "title": "Hello world!",
-    "subtitle": "Mostly a backend developer — I still try my best to craft tidy frontends with Java, Kotlin, and a splash of React magic.",
+    "subtitle": "Mostly a backend developer — I still try my best to craft clean frontends with Java, Kotlin, and a splash of React magic.",
     "download": "Download",
     "preview": "Preview",
     "downloadCVEN": "Download CV (EN)",
@@ -69,7 +69,7 @@
     "piscineBody": "Selective, four-week intensive bootcamp used worldwide to identify self-driven developers This is used to recieve a place in a 42 school.",
     "piscinePointOne": "Learned solely through documentation and peers.",
     "piscinePointTwo": "Long days coding C, debugging, pressure.",
-    "picinePointThree": "Proved the ability to stay focused under stress.",
+    "piscinePointThree": "Proved the ability to stay focused under stress.",
     "piscineImageAlt": "Terminal windows and C code representing the Piscine programming bootcamp",
 
     "fortyTwoIntroYear": "From 2023",

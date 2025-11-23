@@ -2,6 +2,9 @@
 
 import { useState, useEffect } from 'react';
 
+import { useAriaHideSiblings } from '@/hooks/useAriaHideSiblings';
+import { useScrollLock } from '@/hooks/useScrollLock';
+
 import { ModalContainer } from './certificates/ModalContainer';
 import { ModalHeader } from './certificates/ModalHeader';
 import { ModalNavigation } from './certificates/ModalNavigation';
@@ -19,6 +22,9 @@ export function CertificatesModal({ isOpen, onClose }: Props) {
   useEffect(() => {
     if (isOpen) setActiveCertIndex(0);
   }, [isOpen]);
+
+  useScrollLock(isOpen);
+  useAriaHideSiblings(isOpen, 'data-modal-root');
 
   if (!isOpen) return null;
 
