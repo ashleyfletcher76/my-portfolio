@@ -60,12 +60,12 @@ export default function ImprintPage() {
           </li>
           <li>
             <a
-              href="https://www.freepik.com/free-ai-image/portrait-3d-male-doctor_133759332.htm#fromView=search&page=1&position=5&uuid=f24221b7-8265-41bd-b411-9797e1814cff&query=male+studying+animation?log-in=google"
+              href="https://www.freepik.com/free-ai-image/3d-cartoon-style-character_94786619.htm"
               className="underline"
               target="_blank"
               rel="noopener noreferrer"
             >
-              “Portait 3D male doctor” — Image by Freepik
+              “3D cartoon style character” — Image by Freepik
             </a>
           </li>
           <li>

@@ -12,6 +12,7 @@ export type TimelineItemConfig = {
   yearKey: string;
   titleKey: string;
   bodyKey: string;
+  bodyPointKeys?: string[];
   imageAltKey: string;
   imageSrc: string;
   links?: TimelineLinkConfig[];
@@ -23,6 +24,7 @@ export const EDUCATION_TIMELINE_ITEMS: TimelineItemConfig[] = [
     yearKey: 'ukSchoolYear',
     titleKey: 'ukSchoolTitle',
     bodyKey: 'ukSchoolBody',
+    bodyPointKeys: ['ukSchoolPointOne', 'ukSchoolPointTwo', 'ukSchoolPointThree'],
     imageAltKey: 'ukSchoolImageAlt',
     imageSrc: '/images/education/school.jpg',
   },
@@ -31,14 +33,16 @@ export const EDUCATION_TIMELINE_ITEMS: TimelineItemConfig[] = [
     yearKey: 'lewesYear',
     titleKey: 'lewesTitle',
     bodyKey: 'lewesBody',
+    bodyPointKeys: ['lewesPointOne', 'lewesPointTwo', 'lewesPointThree'],
     imageAltKey: 'lewesImageAlt',
-    imageSrc: '/images/education/college.jpg',
+    imageSrc: '/images/education/school2.jpg',
   },
   {
     id: 'piscine',
     yearKey: 'piscineYear',
     titleKey: 'piscineTitle',
     bodyKey: 'piscineBody',
+    bodyPointKeys: ['piscinePointOne', 'piscinePointTwo', 'picinePointThree'],
     imageAltKey: 'piscineImageAlt',
     imageSrc: '/images/education/piscine.jpg',
   },
@@ -47,6 +51,7 @@ export const EDUCATION_TIMELINE_ITEMS: TimelineItemConfig[] = [
     yearKey: 'fortyTwoIntroYear',
     titleKey: 'fortyTwoIntroTitle',
     bodyKey: 'fortyTwoIntroBody',
+    bodyPointKeys: ['fortyTwoIntroPointOne', 'fortyTwoIntroPointTwo', 'fortyTwoIntroPointThree'],
     imageAltKey: 'fortyTwoIntroImageAlt',
     imageSrc: '/images/education/learning.jpg',
     links: [
@@ -61,6 +66,11 @@ export const EDUCATION_TIMELINE_ITEMS: TimelineItemConfig[] = [
     yearKey: 'fortyTwoJourneyYear',
     titleKey: 'fortyTwoJourneyTitle',
     bodyKey: 'fortyTwoJourneyBody',
+    bodyPointKeys: [
+      'fortyTwoJourneyPointOne',
+      'fortyTwoJourneyPointTwo',
+      'fortyTwoJourneyPointThree',
+    ],
     imageAltKey: 'fortyTwoJourneyImageAlt',
     imageSrc: '/images/education/42.jpg',
   },
@@ -69,6 +79,7 @@ export const EDUCATION_TIMELINE_ITEMS: TimelineItemConfig[] = [
     yearKey: 'internshipYear',
     titleKey: 'internshipTitle',
     bodyKey: 'internshipBody',
+    bodyPointKeys: ['internshipPointOne', 'internshipPointTwo', 'internshipPointThree'],
     imageAltKey: 'internshipImageAlt',
     imageSrc: '/images/education/internship.jpg',
     links: [
@@ -83,7 +94,32 @@ export const EDUCATION_TIMELINE_ITEMS: TimelineItemConfig[] = [
     yearKey: 'certsYear',
     titleKey: 'certsTitle',
     bodyKey: 'certsBody',
+    bodyPointKeys: ['certsPointOne', 'certsPointTwo', 'certsPointThree'],
     imageAltKey: 'certsImageAlt',
     imageSrc: '/images/education/workHome.jpg',
+  },
+];
+
+export const CERTIFICATES = [
+  {
+    id: 'spring-security',
+    filePath: '/certificates/CertificateOfCompletion_Spring_6_SpringSecurity.pdf',
+    titleKey: 'Spring 6 & Spring Security',
+  },
+  {
+    id: 'tdd-spring',
+    filePath:
+      '/certificates/CertificateOfCompletion_TestDrivenDevelopmentInSpringBootWithJUnitAndMockito.pdf',
+    titleKey: 'Test-Driven Development in Spring Boot with JUnit and Mockito',
+  },
+  {
+    id: 'intro-spring-boot',
+    filePath: '/certificates/IntroductionToSpringBootAndSpringCore.pdf',
+    titleKey: 'Introduction to Spring Boot and Spring Core',
+  },
+  {
+    id: 'learn-spring',
+    filePath: '/certificates/LearnSpring.pdf',
+    titleKey: 'Learn Spring',
   },
 ];

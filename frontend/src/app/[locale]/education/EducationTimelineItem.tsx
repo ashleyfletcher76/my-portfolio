@@ -16,62 +16,49 @@ type AppHref = React.ComponentProps<typeof Link>['href'];
 
 export function EducationTimelineItem({
   item,
-  index,
-  totalCount,
   t,
   onCertificatesClick,
 }: EducationTimelineItemProps) {
-  const isLeftSideOnDesktop = index % 2 === 0;
-  const isLast = index === totalCount - 1;
-
   return (
-    <li className="grid grid-cols-[auto,1fr] gap-4 md:grid-cols-[1fr,auto,1fr] md:gap-8">
-      {/* Timeline spine column */}
-      <div className="col-start-1 flex flex-col items-center md:col-start-2">
-        {/* Dot */}
-        <div className="flex h-4 items-center">
-          <span className="border-accent bg-background inline-flex h-3 w-3 rounded-full border" />
-        </div>
-        {/* Line down to next item */}
-        <div
-          className={`mt-1 w-px flex-1 ${isLast ? 'bg-border/60' : 'bg-border'}`}
-          aria-hidden="true"
-        />
-      </div>
-
-      {/* Content card */}
-      <article
-        className={`border-border bg-card/80 col-start-2 flex flex-col items-start rounded-xl border p-4 text-sm shadow-sm backdrop-blur-sm sm:p-5 sm:text-base ${
-          isLeftSideOnDesktop ? 'md:[grid-column:1/2]' : 'md:[grid-column:3/4]'
-        }`}
-      >
-        {/* Year label */}
-        <p className="text-muted-foreground mx-auto text-xs font-medium tracking-wide uppercase">
+    <li>
+      <article className="border-border bg-card flex flex-col items-center rounded-xl border p-4 text-sm shadow-sm sm:p-5 sm:text-base">
+        {/* Year */}
+        <p className="text-muted-foreground text-xs font-medium tracking-wide uppercase">
           {t(item.yearKey)}
         </p>
 
         {/* Title */}
-        <h2 className="mx-auto mt-1 text-base font-semibold sm:text-lg">{t(item.titleKey)}</h2>
+        <h2 className="mt-1 text-base font-semibold sm:text-lg">{t(item.titleKey)}</h2>
 
         {/* Image */}
-        <div className="border-border/60 bg-muted/40 mx-auto mt-3 overflow-hidden rounded-lg border">
+        <div className="border-border/60 bg-muted/40 mt-3 overflow-hidden rounded-lg border">
           <Image
             src={item.imageSrc}
             alt={t(item.imageAltKey)}
-            width={400}
+            width={150}
             height={100}
-            className="mx-auto block h-auto w-auto object-cover"
+            className="h-auto object-cover"
           />
         </div>
 
         {/* Body text */}
         <p className="mt-3 leading-relaxed">{t(item.bodyKey)}</p>
 
-        {/* Links for items */}
+        {/* Bullet points (optional) */}
+        {item.bodyPointKeys && item.bodyPointKeys.length > 0 && (
+          <ul className="mt-2 list-disc space-y-1 pl-5 text-sm">
+            {item.bodyPointKeys.map((key) => (
+              <li key={key}>{t(key)}</li>
+            ))}
+          </ul>
+        )}
+
+        {/* External or internal links */}
         {item.links && item.links.length > 0 && (
           <div className="mt-3 flex flex-wrap gap-3">
             {item.links.map((link) => {
               const isExternal = typeof link.href === 'string' && /^https?:\/\//.test(link.href);
+
               return isExternal ? (
                 <a
                   key={link.labelKey}
@@ -95,9 +82,9 @@ export function EducationTimelineItem({
           </div>
         )}
 
-        {/* Certificates preview button */}
+        {/* Certificates CTA */}
         {item.id === 'certs' && onCertificatesClick && (
-          <div className="mt-3">
+          <div className="mt-4">
             <button
               type="button"
               onClick={onCertificatesClick}
