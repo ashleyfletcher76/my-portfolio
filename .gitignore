@@ -92,3 +92,5 @@ replay_pid*
 *.local
 *.secret
 /tmp/
+
+store-items/

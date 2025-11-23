@@ -1,7 +1,7 @@
 {
   "HomePage": {
     "title": "Hello world!",
-    "subtitle": "Mostly a backend developer — I still try my best to craft tidy frontends with Java, Kotlin, and a splash of React magic.",
+    "subtitle": "Mostly a backend developer — I still try my best to craft clean frontends with Java, Kotlin, and a splash of React magic.",
     "download": "Download",
     "preview": "Preview",
     "downloadCVEN": "Download CV (EN)",
@@ -18,8 +18,18 @@
     "home": "Home",
     "about": "About",
     "education": "Education",
+    "experience": "Work Experience",
     "projects": "Projects",
-    "contact": "Contact"
+    "contact": "Contact",
+    "imprint": "Imprint"
+  },
+  "Footer": {
+    "credits": "Imprint & Image Credits",
+    "aboutStatement": "Images used on About page — listed top to bottom (42 logo excluded)",
+    "educationStatement": "Images used on Education page — listed top to bottom",
+    "imprint": "Imprint",
+    "imageCredits": "Image Credits",
+    "attributionStatement": "Below are the image attributions for assets used on this website. Additional attributions will be added as needed."
   },
   "AllProjects": {
     "allProjects": "All Projects",
@@ -28,9 +38,79 @@
   },
   "AboutMe": {
     "me": "About Me",
-    "farming": "I grew up working on farms and spent several years in agriculture before moving to Germany in 2019. Those years shaped a lot of my work ethic—long hours, hands-on problem-solving, and staying calm when things don’t go as planned.",
-    "photography": "After settling in Germany, I started freelancing in photography. Running a small one-person business taught me responsibility, working with clients, and building something from scratch.",
-    "42": "Over time, my interests shifted toward tech. I retrained as a software developer and joined 42 Heilbronn, where I learned C, C++, algorithms, and system programming in a peer-driven learning environment.",
-    "schwarz": "Most recently, I completed my internship at Schwarz IT, working with Kotlin, Java, TypeScript, Docker, and microservice architectures. It confirmed that software development is exactly where I want to build my career."
+    "farming": "I grew up working on farms and spent several years in agriculture before moving to Germany in 2019. Those years shaped a lot of my work ethic through the long hours, hands-on problem-solving, and staying calm when things don’t go as planned.",
+    "photography": "After settling in Germany, alongside working on logisitics, I started freelancing in photography and videography. Running a small one-person business taught me responsibility, working with clients, and building something from scratch.",
+    "42": "Over time, my interests shifted toward tech. I retrained as a software developer and joined 42 Heilbronn, where I learned C, C++, Python, algorithms, and system programming in a peer-driven learning environment.",
+    "schwarz": "Most recently, I completed my internship at Schwarz IT, working with Kotlin, Vue.js(TypeScript), Docker, and microservice architectures. It confirmed that software development is exactly where I want to build my career."
+  },
+  "Education": {
+    "title": "Education",
+    "intro": "My education doesn’t follow a straight line. It goes from British secondary school and a practical business qualification to a peer-driven coding school and a backend-focused internship in Germany. This timeline gives some context to how I learned and how I like to work today.",
+    "timelineLabel": "Education timeline",
+
+    "ukSchoolYear": "Up to age 16",
+    "ukSchoolTitle": "School in the UK",
+    "ukSchoolBody": "Standard British secondary education up to GCSE's, the UK’s equivalent to a Mittlerer Schulabschluss.",
+    "ukSchoolPointOne": "Core subjects such as English, Maths, Sciences...",
+    "ukSchoolPointTwo": "Build foundational learning in childhood.",
+    "ukSchoolPointThree": "Learnt to independently work for myself.",
+    "ukSchoolImageAlt": "School books and classroom items representing UK secondary education",
+
+    "lewesYear": "16–18",
+    "lewesTitle": "Lewes College – BTEC Level 3 Business",
+    "lewesBody": "BTEC Level 3 in Business, a qualification in the UK that is equivalent to A-Levels or a Fachabitur.",
+    "lewesPointOne": "Coursework-based programme focused on real business.",
+    "lewesPointTwo": "Analysis, presentations and communication.",
+    "lewesPointThree": "Planned small projects and justified decisions clearly.",
+    "lewesImageAlt": "College campus scene symbolising further education and business studies",
+
+    "piscineYear": "2023",
+    "piscineTitle": "The 42 Piscine",
+    "piscineBody": "Selective, four-week intensive bootcamp used worldwide to identify self-driven developers This is used to recieve a place in a 42 school.",
+    "piscinePointOne": "Learned solely through documentation and peers.",
+    "piscinePointTwo": "Long days coding C, debugging, pressure.",
+    "piscinePointThree": "Proved the ability to stay focused under stress.",
+    "piscineImageAlt": "Terminal windows and C code representing the Piscine programming bootcamp",
+
+    "fortyTwoIntroYear": "From 2023",
+    "fortyTwoIntroTitle": "42 School – independent school",
+    "fortyTwoIntroBody": "42 is an internationally recognised programming school backed by leading companies.",
+    "fortyTwoIntroPointOne": "Learned by building software from scratch.",
+    "fortyTwoIntroPointTwo": "Covered C, algorithms, systems programming…",
+    "fortyTwoIntroPointThree": "Developed analytical thinking and collaboration.",
+    "fortyTwoIntroImageAlt": "Stylised 42 logo and code editor representing the 42 school concept",
+    "fortyTwoHeilbronnSite": "Check out the official 42 Heilbronn website for more details",
+
+    "fortyTwoJourneyYear": "2023–2024",
+    "fortyTwoJourneyTitle": "My journey through the 42 core curriculum",
+    "fortyTwoJourneyBody": "Working through the 42 core curriculum taught me to build reliable software through deep problem understanding.",
+    "fortyTwoJourneyPointOne": "Built C-based projects involving memory, parsing and processes.",
+    "fortyTwoJourneyPointTwo": "Networking, Docker, microservices, full stack.",
+    "fortyTwoJourneyPointThree": "Decision-making, communication and planning.",
+    "fortyTwoJourneyImageAlt": "Terminal windows and project boards showing intensive programming work",
+
+    "internshipYear": "2024–2025",
+    "internshipTitle": "Internship at Schwarz IT",
+    "internshipBody": "I applied my 42 training in a real production environment during my internship at Schwarz IT.",
+    "internshipPointOne": "Kotlin, TypeScript, REST APIs, Docker, CI/CD.",
+    "internshipPointTwo": "Contributed to backend modules and Vue.js frontend work.",
+    "internshipPointThree": "Tickets, code reviews, deployments.",
+    "internshipCtaLabel": "Read more about my work experience",
+    "internshipImageAlt": "Developer workspace with multiple screens showing backend and frontend code",
+
+    "certsYear": "After the internship",
+    "certsTitle": "Continued Development",
+    "certsBody": "I am now continueing to expand my backend skills through structured Spring Boot courses.",
+    "certsPointOne": "REST, Security, testing.",
+    "certsPointTwo": "Stronger backend architecture.",
+    "certsPointThree": "Filling knowledge gaps, disciplined habits.",
+    "certsImageAlt": "Laptop and notes representing online courses and programming certificates",
+    "certsCtaLabel": "View my certificates",
+    "certsListLabel": "Certificates",
+    "certsPdfFallback": "Your browser cannot display this PDF inline.",
+    "certsPdfFallbackLink": "Open the certificate in a new tab.",
+    "certsPrevLabel": "Previous",
+    "certsNextLabel": "Next",
+    "certsPositionLabel": "{current} of {total}"
   }
 }
