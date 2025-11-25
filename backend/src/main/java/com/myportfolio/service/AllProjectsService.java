@@ -33,7 +33,13 @@ public class AllProjectsService {
                 (String k, Executor executor) ->
                     githubClient
                         .listUserRepos(k)
-                        .map(allProjectsMapper::toDto)
+                        .flatMap(
+                            repo -> {
+                              String languagesUrl = (String) repo.get("languages_url");
+                              return githubClient
+                                  .repoLanguages(languagesUrl)
+                                  .map(langs -> allProjectsMapper.toDto(repo, langs));
+                            })
                         .collectList()
                         .toFuture());
   }

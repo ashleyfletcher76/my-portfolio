@@ -38,14 +38,14 @@ export function MobileMenu({
   return (
     <div data-mobile-menu className="fixed inset-0 z-50 md:hidden" onClick={onClose}>
       {/* backdrop */}
-      <div className="absolute inset-0 bg-white/20 backdrop-blur-sm dark:bg-black/40" />
+      <div className="absolute inset-0 bg-white dark:bg-black" />
       <aside
         id={id}
         role="dialog"
         aria-modal="true"
         aria-labelledby="mobile-menu-title"
         tabIndex={-1}
-        className="bg-background animate-in slide-in-from-right dark:text-foreground absolute inset-y-0 right-0 flex w-[34rem] max-w-[90vw] translate-x-0 flex-col py-4 text-4xl text-slate-900 shadow-xl duration-200"
+        className="animate-in slide-in-from-right absolute inset-y-0 right-0 flex w-[34rem] max-w-[90vw] flex-col bg-white py-4 text-black shadow-xl duration-200 dark:bg-black dark:text-white"
         onClick={(e) => e.stopPropagation()}
         ref={panelRef}
         onKeyDown={createTrapTabHandler(panelRef)}

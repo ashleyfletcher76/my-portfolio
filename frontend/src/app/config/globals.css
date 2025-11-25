@@ -1,5 +1,8 @@
 @import 'tailwindcss';
 
+/* Tell Tailwind: “dark: …” = when a .dark class is somewhere up the tree */
+@custom-variant dark (&:where(.dark, .dark *));
+
 /* -----------------------------------------------------
    Base: browser palette hint
 ----------------------------------------------------- */
