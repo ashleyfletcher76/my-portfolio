@@ -10,7 +10,7 @@ export default async function EducationPage() {
       {/* Page header */}
       <header className="max-w-6xl">
         <h1 className="text-2xl font-semibold tracking-tight sm:text-3xl">{t('title')}</h1>
-        <p className="mt-4 text-sm sm:text-base">{t('intro')}</p>
+        <p className="mt-4 text-base sm:text-lg">{t('intro')}</p>
       </header>
 
       {/* Timeline + certificates modal */}

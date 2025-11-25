@@ -17,13 +17,14 @@ export default async function ProjectsPage() {
     );
 
   return (
-    <main className="mx-auto max-w-7xl py-15">
-      <h1 className="mb-6 text-5xl font-semibold">{t('allProjects')}</h1>
-      <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+    <main className="max-w-8xl mx-auto flex min-h-dvh flex-col px-4 py-16 sm:px-6 lg:px-8">
+      <h1 className="mb-2 text-5xl font-semibold">{t('allProjects')}</h1>
+      <p className="mt-4 text-base sm:text-lg">{t('intro')}</p>
+      <div className="mt-4 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
         {projects.map((p) => (
           <article
             key={p.name}
-            className="bg-card text-card-foreground rounded-2xl border p-4 shadow-sm transition-shadow hover:shadow-md"
+            className="text-card-foreground rounded-2xl border bg-gray-100 p-4 text-black shadow-sm transition-shadow hover:shadow-md"
           >
             <header className="mb-2">
               <h2 className="text-lg font-medium">

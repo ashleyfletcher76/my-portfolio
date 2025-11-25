@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 import { getLocale, getTranslations } from 'next-intl/server';
 
 import CVCard from '@/components/CVCard';
@@ -30,8 +31,18 @@ export default async function HomePage() {
             {t('subtitle')}
           </p>
 
+          <p className="mt-4 text-sm sm:text-base">
+            {t.rich('aboutCta', {
+              link: (chunks) => (
+                <Link href="/about" className="hover:text-foreground underline underline-offset-2">
+                  {chunks}
+                </Link>
+              ),
+            })}
+          </p>
+
           {/* CV buttons row */}
-          <div className="mt-6 flex flex-wrap gap-2">
+          <div className="mt-8 flex flex-wrap gap-2">
             <CVCard
               flag="🇬🇧"
               title={t('downloadCVEN')}
