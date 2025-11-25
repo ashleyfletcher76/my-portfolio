@@ -9,11 +9,11 @@ import { ProjectCard } from './ProjectCard';
 import type { AllProject } from '@/lib/api';
 
 export default function ProjectsFilterGrid({
-  projects,
+  projects = [],
   locale,
   translationNamespace,
 }: {
-  projects: AllProject[];
+  projects?: AllProject[];
   locale: string;
   translationNamespace: string;
 }) {
@@ -34,7 +34,7 @@ export default function ProjectsFilterGrid({
 
   const filtered = useMemo(() => {
     if (selected === 'all') return projects;
-    return projects.filter((p) => p.languages.includes(selected));
+    return projects.filter((p) => Array.isArray(p.languages) && p.languages.includes(selected));
   }, [selected, projects]);
 
   return (
