@@ -23,7 +23,7 @@ export default async function LocaleLayout({
   const messages = await getMessages();
 
   return (
-    <html lang={locale} suppressHydrationWarning className="h-full">
+    <html lang={locale} suppressHydrationWarning data-theme-ready className="h-full">
       <body className="bg-background text-foreground min-h-dvh antialiased transition-colors duration-300">
         <ThemeProvider
           attribute="class"

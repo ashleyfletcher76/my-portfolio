@@ -36,7 +36,10 @@
     "allProjects": "All Projects",
     "intro": "Check out my public github repos!",
     "noDescription": "No description provided.",
-    "viewOnGitHub": "View on GitHub:"
+    "viewOnGitHub": "View on GitHub:",
+    "noLanguage": "No language found.",
+    "filterIntro": "Filter by language:",
+    "allLanguages": "All"
   },
   "AboutMe": {
     "me": "About Me",
