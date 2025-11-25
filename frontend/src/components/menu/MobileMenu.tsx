@@ -45,7 +45,7 @@ export function MobileMenu({
         aria-modal="true"
         aria-labelledby="mobile-menu-title"
         tabIndex={-1}
-        className="animate-in slide-in-from-right bg-opacity-100 dark:bg-opacity-100 absolute inset-y-0 right-0 flex w-[34rem] max-w-[90vw] flex-col bg-white py-4 text-black shadow-xl duration-200 dark:bg-black dark:text-white"
+        className="animate-in slide-in-from-right absolute inset-y-0 right-0 flex w-[34rem] max-w-[90vw] flex-col bg-white py-4 text-black shadow-xl duration-200 dark:bg-black dark:text-white"
         onClick={(e) => e.stopPropagation()}
         ref={panelRef}
         onKeyDown={createTrapTabHandler(panelRef)}

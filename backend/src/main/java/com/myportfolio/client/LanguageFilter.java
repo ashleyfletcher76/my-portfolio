@@ -5,8 +5,16 @@ import java.util.List;
 import java.util.Map;
 import java.util.Objects;
 
+/**
+ * Utility class for filtering programming languages based on their significance in a codebase. The
+ * filtering algorithm considers a language significant if it accounts for at least 20% of the total
+ * codebase size (in bytes). The {@link #filterSignificantLanguages(Map)} method returns a list of
+ * such languages, sorted by their size in descending order.
+ */
 public class LanguageFilter {
-
+  /*
+   * Minimum percentage (0.20 = 20%) of total bytes for a language to be considered "significant".
+   * */
   private static final double MIN_PERCENT = 0.20;
 
   private LanguageFilter() {}

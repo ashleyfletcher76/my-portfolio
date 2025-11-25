@@ -18,6 +18,7 @@ export function LanguageFilterBar({ languages, selected, onSelect, t }: Language
           <button
             key={lang}
             onClick={() => onSelect(lang)}
+            aria-pressed={selected === lang}
             className={[
               'rounded-full border px-3 py-1 text-xs transition',
               selected === lang
