@@ -31,7 +31,10 @@ export function WorkTimelineItem({ item, index, totalCount, t }: WorkTimelineIte
           </ul>
         )}
         {(index + 1) % 4 !== 0 && index !== totalCount - 1 && (
-          <div className="pointer-events-none absolute top-1/2 -right-8 hidden -translate-y-1/2 lg:block">
+          <div
+            className="pointer-events-none absolute top-1/2 -right-8 hidden -translate-y-1/2 lg:block"
+            aria-hidden="true"
+          >
             <span className="text-3xl">→</span>
           </div>
         )}

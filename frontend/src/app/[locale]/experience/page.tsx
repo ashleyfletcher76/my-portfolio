@@ -1,9 +1,9 @@
-import { useTranslations } from 'next-intl';
+import { getTranslations } from 'next-intl/server';
 
 import { WorkTimeline } from './WorkTimeline';
 
-export default function ExperiencePage() {
-  const t = useTranslations('Work');
+export default async function ExperiencePage() {
+  const t = await getTranslations('Work');
 
   return (
     <main className="max-w-8xl mx-auto flex min-h-dvh flex-col px-4 py-16 sm:px-6 lg:px-8">
