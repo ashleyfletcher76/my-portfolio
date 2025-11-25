@@ -1,81 +1,79 @@
 import Image from 'next/image';
 import { useTranslations } from 'next-intl';
 
+import { AboutSection } from './AboutSection';
+
 export default function AboutPage() {
   const t = useTranslations('AboutMe');
   return (
-    <div className="mx-auto max-w-4xl space-y-16 px-4 pt-16">
+    <div className="space-y-8 px-4 pt-16">
       <h1 className="text-center text-3xl font-semibold">{t('me')}</h1>
 
-      {/* Farming Section */}
-      <section className="grid grid-cols-1 items-center gap-8 sm:grid-cols-2">
-        <div className="space-y-2 text-[22px] leading-relaxed">
-          <p>{t('farming')}</p>
-        </div>
-
-        <div className="flex justify-center">
+      {/* Farming */}
+      <AboutSection
+        text={t('farming')}
+        image={
           <Image
             src="/images/about/farming.jpg"
             alt="Tractor"
-            width={1200}
+            width={1000}
             height={800}
             className="h-auto w-full max-w-none rounded-lg object-cover"
+            sizes="(min-width: 640px) 50vw, 100vw"
+            priority
           />
-        </div>
-      </section>
+        }
+      />
 
-      {/* Photography Section */}
-      <section className="grid grid-cols-1 items-center gap-8 sm:grid-cols-2">
-        <div className="flex justify-center">
+      {/* Photography */}
+      <AboutSection
+        text={t('photography')}
+        imageOnLeft
+        image={
           <Image
             src="/images/about/photography.jpg"
             alt="Camera"
-            width={1200}
+            width={1000}
             height={800}
             className="h-auto w-full max-w-none rounded-lg object-cover"
+            sizes="(min-width: 640px) 50vw, 100vw"
+            priority
           />
-        </div>
+        }
+      />
 
-        <div className="space-y-2 text-[22px] leading-relaxed">
-          <p>{t('photography')}</p>
-        </div>
-      </section>
-
-      {/* 42 School Section */}
-      <section className="grid grid-cols-1 items-center gap-8 sm:grid-cols-2">
-        <div className="space-y-2 text-[22px] leading-relaxed">
-          <p>{t('42')}</p>
-        </div>
-
-        <div className="flex justify-center">
-          <div className="w-full max-w-none rounded-lg bg-white p-4">
+      {/* 42 */}
+      <AboutSection
+        text={t('42')}
+        image={
+          <div className="rounded-lg bg-white p-6">
             <Image
               src="/images/42_Logo.svg"
-              alt="42 Logo"
+              alt="42"
               width={200}
               height={200}
               className="object-contain"
+              sizes="(min-width: 640px) 50vw, 100vw"
             />
           </div>
-        </div>
-      </section>
+        }
+      />
 
-      {/* Schwarz IT Section */}
-      <section className="grid grid-cols-1 items-center gap-8 sm:grid-cols-2">
-        <div className="flex justify-center">
+      {/* internship */}
+      <AboutSection
+        text={t('schwarz')}
+        imageOnLeft
+        image={
           <Image
             src="/images/about/computer.jpg"
             alt="Computer"
-            width={1200}
+            width={1000}
             height={800}
-            className="h-auto w-full rounded-lg object-cover"
+            className="h-auto w-full max-w-none rounded-lg object-cover"
+            sizes="(min-width: 640px) 50vw, 100vw"
           />
-        </div>
-
-        <div className="space-y-2 text-[22px] leading-relaxed">
-          <p>{t('schwarz')}</p>
-        </div>
-      </section>
+        }
+      />
     </div>
   );
 }

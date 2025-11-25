@@ -2,6 +2,7 @@
   "HomePage": {
     "title": "Hello world!",
     "subtitle": "Mostly a backend developer — I still try my best to craft clean frontends with Java, Kotlin, and a splash of React magic.",
+    "aboutCta": "Want to know more about my background? Check out the <link>About</link> page or download my CV below.",
     "download": "Download",
     "preview": "Preview",
     "downloadCVEN": "Download CV (EN)",
@@ -33,6 +34,7 @@
   },
   "AllProjects": {
     "allProjects": "All Projects",
+    "intro": "Check out my pulbic github repos!",
     "noDescription": "No description provided.",
     "viewOnGitHub": "View on GitHub:"
   },
@@ -112,5 +114,60 @@
     "certsPrevLabel": "Previous",
     "certsNextLabel": "Next",
     "certsPositionLabel": "{current} of {total}"
+  },
+  "Work": {
+    "title": "Work Experience",
+    "intro": "My work experience has moved through public service, agriculture, logistics, freelance creative work and now software development. Each step built skills I still rely on today: responsibility, clear communication, planning and staying calm when things change quickly. This page gives an overview of that journey and how those roles connect to the way I now work as a developer.",
+    "timelineLabel": "Work experience overview",
+
+    "lifeguardYear": "2013–2016",
+    "lifeguardTitle": "Lifeguard, Places Leisure",
+    "lifeguardBody": "My first long-term job in the UK, looking after guests in a busy public leisure centre.",
+    "lifeguardPointOne": "Monitored pool safety and enforced rules to prevent accidents.",
+    "lifeguardPointTwo": "Responded to incidents and first-aid situations with a clear head.",
+    "lifeguardPointThree": "Learned to stay focused for long shifts and communicate clearly with the public.",
+
+    "agromilloraYear": "2017–2018",
+    "agromilloraTitle": "Agricultural Worker, Agromillora (Australia)",
+    "agromilloraBody": "Seasonal agricultural work in Australia, combining machinery operation with plant care on a large farm.",
+    "agromilloraPointOne": "Operated tractors and equipment safely over long days in changing conditions.",
+    "agromilloraPointTwo": "Looked after plants in the field and in poly tunnels, following strict procedures.",
+    "agromilloraPointThree": "Built discipline, stamina and a habit of planning ahead to keep work running smoothly.",
+
+    "leaderbrandYear": "2018–2019",
+    "leaderbrandTitle": "Agricultural Worker, LeaderBrand (New Zealand)",
+    "leaderbrandBody": "Continued agricultural work in New Zealand on large-scale lettuce production and logistics.",
+    "leaderbrandPointOne": "Coordinated the movement of crops from fields to storage, supporting smooth logistics.",
+    "leaderbrandPointTwo": "Used heavy machinery responsibly across large paddocks.",
+    "leaderbrandPointThree": "Adapted quickly to weather, schedules and priorities while keeping quality high.",
+
+    "europaparkYear": "2019–2020",
+    "europaparkTitle": "Warehouse Associate, Europa-Park",
+    "europaparkBody": "Warehouse role supporting hotels and restaurants at one of Europe’s largest theme parks.",
+    "europaparkPointOne": "Handled stock for food and beverages and ensured timely deliveries to internal customers.",
+    "europaparkPointTwo": "Maintained an organised, safe warehouse environment.",
+    "europaparkPointThree": "Learned to work efficiently in a fast-paced, service-focused operation.",
+
+    "mlMedienYear": "2020–2023",
+    "mlMedienTitle": "Warehouse Associate, ML Medien-Logistik",
+    "mlMedienBody": "Logistics and warehouse position handling shipments for Deutsche Post in Nuremberg.",
+    "mlMedienPointOne": "Processed incoming and outgoing shipments while keeping inventory accurate.",
+    "mlMedienPointTwo": "Helped keep daily operations running reliably under time pressure.",
+    "mlMedienPointThree": "Took on informal coordination tasks and supported a cooperative team atmosphere.",
+
+    "freelanceVideoYear": "2021–2022",
+    "freelanceVideoTitle": "Freelance Videographer & Video Editor",
+    "freelanceVideoBody": "Alongside logistics work, I ran a small freelance business producing video content for clients.",
+    "freelanceVideoPointOne": "Planned, filmed and edited projects from initial brief to final delivery.",
+    "freelanceVideoPointTwo": "Managed client communication, expectations and deadlines independently.",
+    "freelanceVideoPointThree": "Learned to scope work, price projects and take full responsibility for the result.",
+
+    "schwarzItYear": "2025",
+    "schwarzItTitle": "Full Stack Engineer (Intern), Schwarz IT",
+    "schwarzItBody": "Backend-leaning full stack internship on a data-intensive platform used across the Schwarz Group.",
+    "schwarzItPointOne": "Developed features in Kotlin backends and Vue.js/TypeScript frontends.",
+    "schwarzItPointTwo": "Designed and consumed OpenAPI-based REST APIs in a Docker and CI/CD environment.",
+    "schwarzItPointThree": "Improved data flows and refactored backend modules to make the codebase easier to maintain.",
+    "schwarzItPointFour": "Worked in an agile team, contributing to sprint planning, code reviews and documentation."
   }
 }

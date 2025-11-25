@@ -2,6 +2,7 @@
   "HomePage": {
     "title": "Hallo Welt!",
     "subtitle": "Mehr Backend als dev — trotzdem bastle ich mit Java, Kotlin und einer Prise React an sauberen Frontends.",
+    "aboutCta": "Möchten Sie mehr über meinen Hintergrund erfahren? Besuchen Sie die <link>Über-mich</link>-Seite oder laden Sie unten meinen Lebenslauf herunter.",
     "download": "Herunterladen",
     "preview": "Vorschau",
     "downloadCVEN": "Lebenslauf (EN) herunterladen",
@@ -33,6 +34,7 @@
   },
   "AllProjects": {
     "allProjects": "Alle Projekte",
+    "intro": "Werfen Sie einen Blick auf meine öffentlichen GitHub-Repos!",
     "noDescription": "Keine Beschreibung vorhanden.",
     "viewOnGitHub": "Auf GitHub ansehen:"
   },
@@ -112,5 +114,60 @@
     "certsPrevLabel": "Zurück",
     "certsNextLabel": "Weiter",
     "certsPositionLabel": "{current} von {total}"
+  },
+  "Work": {
+    "title": "Berufserfahrung",
+    "intro": "Meine Berufserfahrung führt durch den öffentlichen Dienst, Landwirtschaft, Logistik, freiberufliche Kreativarbeit und schließlich in die Softwareentwicklung. Jeder Abschnitt hat Fähigkeiten aufgebaut, auf die ich heute noch zurückgreife: Verantwortung, klare Kommunikation, Planung und Ruhe in schnell wechselnden Situationen. Diese Seite zeigt diesen Weg und wie diese Rollen meine Arbeitsweise als Entwickler geprägt haben.",
+    "timelineLabel": "Überblick über die Berufserfahrung",
+
+    "lifeguardYear": "2013–2016",
+    "lifeguardTitle": "Badewart, Places Leisure",
+    "lifeguardBody": "Meine erste langfristige Stelle im Vereinigten Königreich, in der ich Gäste in einem gut besuchten öffentlichen Freizeitzentrum betreute.",
+    "lifeguardPointOne": "Überwachte die Sicherheit im Schwimmbad und setzte Regeln durch, um Unfälle zu vermeiden.",
+    "lifeguardPointTwo": "Reagierte ruhig und klar auf Vorfälle und Erste-Hilfe-Situationen.",
+    "lifeguardPointThree": "Lernte, auch bei langen Schichten konzentriert zu bleiben und klar mit der Öffentlichkeit zu kommunizieren.",
+
+    "agromilloraYear": "2017–2018",
+    "agromilloraTitle": "Landwirtschaftlicher Mitarbeiter, Agromillora (Australien)",
+    "agromilloraBody": "Saisonarbeit in Australien, eine Mischung aus Maschinenbedienung und Pflanzenpflege auf einer großen Farm.",
+    "agromilloraPointOne": "Traktoren und Maschinen sicher über lange Tage und wechselnde Bedingungen betrieben.",
+    "agromilloraPointTwo": "Pflanzen im Feld und in Polytunneln gepflegt und dabei strikte Verfahren befolgt.",
+    "agromilloraPointThree": "Disziplin, Ausdauer und vorausschauende Arbeitsweise entwickelt, um Abläufe reibungslos zu halten.",
+
+    "leaderbrandYear": "2018–2019",
+    "leaderbrandTitle": "Landwirtschaftlicher Mitarbeiter, LeaderBrand (Neuseeland)",
+    "leaderbrandBody": "Fortsetzung der landwirtschaftlichen Arbeit in Neuseeland, mit Schwerpunkt auf großflächiger Salatproduktion und Logistik.",
+    "leaderbrandPointOne": "Den Transport der Ernte vom Feld ins Lager koordiniert und so eine reibungslose Logistik unterstützt.",
+    "leaderbrandPointTwo": "Schwere Maschinen verantwortungsbewusst auf großen Feldern eingesetzt.",
+    "leaderbrandPointThree": "Schnell an Wetter, Zeitpläne und Prioritäten angepasst und dennoch hohe Qualität gehalten.",
+
+    "europaparkYear": "2019–2020",
+    "europaparkTitle": "Lagermitarbeiter, Europa-Park",
+    "europaparkBody": "Lagertätigkeiten zur Unterstützung von Hotels und Restaurants in einem der größten Freizeitparks Europas.",
+    "europaparkPointOne": "Waren für Gastronomie und Hotels kommissioniert und pünktliche Lieferungen an interne Kunden sichergestellt.",
+    "europaparkPointTwo": "Ein organisiertes und sicheres Lagerumfeld aufrechterhalten.",
+    "europaparkPointThree": "Effizient in einem schnellen, serviceorientierten Umfeld gearbeitet.",
+
+    "mlMedienYear": "2020–2023",
+    "mlMedienTitle": "Lagermitarbeiter, ML Medien-Logistik",
+    "mlMedienBody": "Logistik- und Lagertätigkeiten für Sendungen der Deutschen Post in Nürnberg.",
+    "mlMedienPointOne": "Ein- und ausgehende Sendungen verarbeitet und korrekte Bestände gepflegt.",
+    "mlMedienPointTwo": "Tägliche Abläufe unter Zeitdruck zuverlässig unterstützt.",
+    "mlMedienPointThree": "Informell Aufgaben koordiniert und ein kooperatives Teamumfeld gestärkt.",
+
+    "freelanceVideoYear": "2021–2022",
+    "freelanceVideoTitle": "Freiberuflicher Videograf & Videoeditor",
+    "freelanceVideoBody": "Parallel zur Logistikarbeit führte ich ein kleines Freelance-Business und produzierte Videoinhalte für Kunden.",
+    "freelanceVideoPointOne": "Projekte von der ersten Idee bis zur finalen Abgabe geplant, gefilmt und geschnitten.",
+    "freelanceVideoPointTwo": "Kundenkommunikation, Erwartungen und Deadlines selbstständig gemanagt.",
+    "freelanceVideoPointThree": "Gelernt, Umfang zu definieren, Preise festzulegen und volle Verantwortung für das Ergebnis zu übernehmen.",
+
+    "schwarzItYear": "2025",
+    "schwarzItTitle": "Full Stack Engineer (Praktikant), Schwarz IT",
+    "schwarzItBody": "Backend-orientiertes Full-Stack-Praktikum an einer datenintensiven internen Plattform für die Schwarz-Gruppe.",
+    "schwarzItPointOne": "Features in Kotlin-Backends und Vue.js/TypeScript-Frontends entwickelt.",
+    "schwarzItPointTwo": "OpenAPI-basierte REST-APIs entworfen und genutzt – in einer Docker- und CI/CD-Umgebung.",
+    "schwarzItPointThree": "Datenflüsse verbessert und Backend-Module refaktoriert, um die Wartbarkeit zu erhöhen.",
+    "schwarzItPointFour": "In einem agilen Team gearbeitet und zu Sprint-Planung, Code-Reviews und Dokumentation beigetragen."
   }
 }

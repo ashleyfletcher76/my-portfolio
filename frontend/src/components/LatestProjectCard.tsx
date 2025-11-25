@@ -16,7 +16,7 @@ export default function LatestProjectCard({
 }) {
   const t = useTranslations('HomePage');
   return (
-    <div className="rounded-2xl border p-4">
+    <div className="rounded-2xl border bg-gray-100 p-4 text-black">
       <a
         href={url}
         target="_blank"
