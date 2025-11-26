@@ -21,7 +21,6 @@
     "education": "Ausbildung",
     "experience": "Berufserfahrung",
     "projects": "Projekte",
-    "contact": "Kontakt",
     "imprint": "Impressum"
   },
   "Footer": {
@@ -36,7 +35,10 @@
     "allProjects": "Alle Projekte",
     "intro": "Werfen Sie einen Blick auf meine öffentlichen GitHub-Repos!",
     "noDescription": "Keine Beschreibung vorhanden.",
-    "viewOnGitHub": "Auf GitHub ansehen:"
+    "viewOnGitHub": "Auf GitHub ansehen:",
+    "noLanguage": "Keine Sprache gefunden.",
+    "filterIntro": "Nach Sprache filtern:",
+    "allLanguages": "Alle"
   },
   "AboutMe": {
     "me": "Über mich",

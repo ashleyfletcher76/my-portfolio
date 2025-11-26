@@ -8,15 +8,17 @@ import { ProjectCard } from './ProjectCard';
 
 import type { AllProject } from '@/lib/api';
 
-export default function ProjectsFilterGrid({
-  projects = [],
-  locale,
-  translationNamespace,
-}: {
-  projects?: AllProject[];
+type ProjectsFilterGridProps = {
+  projects: AllProject[];
   locale: string;
   translationNamespace: string;
-}) {
+};
+
+export default function ProjectsFilterGrid({
+  projects,
+  locale,
+  translationNamespace,
+}: ProjectsFilterGridProps) {
   const t = useTranslations(translationNamespace);
 
   const formatIso = (iso: string) =>
@@ -26,7 +28,11 @@ export default function ProjectsFilterGrid({
 
   const languages = useMemo(() => {
     const set = new Set<string>();
-    projects.forEach((p) => p.languages.forEach((lang) => set.add(lang)));
+
+    projects.forEach((p) => {
+      p.languages?.forEach((lang) => set.add(lang));
+    });
+
     return ['all', ...Array.from(set).sort()];
   }, [projects]);
 
@@ -34,9 +40,8 @@ export default function ProjectsFilterGrid({
 
   const filtered = useMemo(() => {
     if (selected === 'all') return projects;
-    return projects.filter((p) =>
-      Array.isArray(p.languages) ? p.languages.includes(selected) : false,
-    );
+
+    return projects.filter((p) => p.languages?.includes(selected) ?? false);
   }, [selected, projects]);
 
   return (

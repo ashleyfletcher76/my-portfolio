@@ -20,7 +20,7 @@ export async function apiGet<T>(path: string, init?: RequestInit): Promise<T> {
 export type AllProject = {
   name: string;
   description: string;
-  languages: string[];
+  languages?: string[];
   lastUpdatedIso: string;
   url: string;
 };

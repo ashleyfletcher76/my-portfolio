@@ -22,7 +22,7 @@ export default async function HomePage() {
   return (
     <main className="flex min-h-dvh flex-col items-center gap-12 px-4 pt-28 pb-16 md:pt-32">
       {/* Hero */}
-      <section className="flex w-full max-w-4xl flex-col items-center gap-10 md:flex-row md:items-center md:justify-between md:text-left">
+      <section className="flex w-full max-w-5xl flex-col items-center gap-10 md:flex-row md:items-center md:justify-between md:text-left">
         {/* Hero text */}
         <div className="text-center md:max-w-xl md:text-left">
           <h1 className="text-4xl font-semibold tracking-tight sm:text-5xl">{t('title')}</h1>

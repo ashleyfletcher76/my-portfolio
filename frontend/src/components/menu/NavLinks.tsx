@@ -4,7 +4,7 @@ import { useTranslations } from 'next-intl';
 
 import { Link } from '@/i18n/routing';
 
-type Route = '/' | '/about' | '/education' | '/experience' | '/projects' | '/contact';
+type Route = '/' | '/about' | '/education' | '/experience' | '/projects';
 
 export function NavLinks({ onItemClick }: { onItemClick?: () => void }) {
   const t = useTranslations('Navigation');
@@ -26,7 +26,6 @@ export function NavLinks({ onItemClick }: { onItemClick?: () => void }) {
       {item('/education', t('education'))}
       {item('/experience', t('experience'))}
       {item('/projects', t('projects'))}
-      {item('/contact', t('contact'))}
     </>
   );
 }

@@ -17,7 +17,7 @@ export default async function ProjectsPage() {
       <h1 className="mb-2 text-5xl font-semibold">{t('allProjects')}</h1>
       <p className="mt-1 text-base sm:text-lg">{t('intro')}</p>
 
-      {/* Our new filter grid */}
+      {/* Filter grid */}
       <ProjectsFilterGrid projects={projects} locale={locale} translationNamespace="AllProjects" />
     </main>
   );
