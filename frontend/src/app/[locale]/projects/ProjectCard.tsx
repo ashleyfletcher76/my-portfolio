@@ -9,7 +9,7 @@ type ProjectCardProps = {
 };
 
 export function ProjectCard({ project, t, formatIso }: ProjectCardProps) {
-  const langs: string[] = Array.isArray(project.languages) ? project.languages : [];
+  const langs = project.languages ?? [];
   const hasLanguage = langs.length > 0;
   return (
     <article className="text-card-foreground rounded-2xl border bg-gray-100 p-4 text-black shadow-sm transition-shadow hover:shadow-md">
