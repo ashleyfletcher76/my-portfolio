@@ -9,7 +9,7 @@ import { ProjectCard } from './ProjectCard';
 import type { AllProject } from '@/lib/api';
 
 export default function ProjectsFilterGrid({
-  projects = [],
+  projects,
   locale,
   translationNamespace,
 }: {
@@ -19,6 +19,8 @@ export default function ProjectsFilterGrid({
 }) {
   const t = useTranslations(translationNamespace);
 
+  const safeProjects = useMemo(() => (Array.isArray(projects) ? projects : []), [projects]);
+
   const formatIso = (iso: string) =>
     new Intl.DateTimeFormat(locale, { dateStyle: 'medium', timeStyle: 'short' }).format(
       new Date(iso),
@@ -26,18 +28,22 @@ export default function ProjectsFilterGrid({
 
   const languages = useMemo(() => {
     const set = new Set<string>();
-    projects.forEach((p) => p.languages.forEach((lang) => set.add(lang)));
+    safeProjects.forEach((p) => {
+      if (Array.isArray(p.languages)) {
+        p.languages.forEach((lang) => set.add(lang));
+      }
+    });
     return ['all', ...Array.from(set).sort()];
-  }, [projects]);
+  }, [safeProjects]);
 
   const [selected, setSelected] = useState('all');
 
   const filtered = useMemo(() => {
-    if (selected === 'all') return projects;
-    return projects.filter((p) =>
+    if (selected === 'all') return safeProjects;
+    return safeProjects.filter((p) =>
       Array.isArray(p.languages) ? p.languages.includes(selected) : false,
     );
-  }, [selected, projects]);
+  }, [selected, safeProjects]);
 
   return (
     <div className="mt-2">

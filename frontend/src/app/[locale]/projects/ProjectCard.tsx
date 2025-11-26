@@ -9,6 +9,8 @@ type ProjectCardProps = {
 };
 
 export function ProjectCard({ project, t, formatIso }: ProjectCardProps) {
+  const langs: string[] = Array.isArray(project.languages) ? project.languages : [];
+  const hasLanguage = langs.length > 0;
   return (
     <article className="text-card-foreground rounded-2xl border bg-gray-100 p-4 text-black shadow-sm transition-shadow hover:shadow-md">
       <header className="mb-2">
@@ -31,7 +33,7 @@ export function ProjectCard({ project, t, formatIso }: ProjectCardProps) {
       </p>
 
       <footer className="text-muted-foreground flex items-center justify-between text-xs">
-        <span>{project.languages.length > 0 ? project.languages.join(', ') : t('noLanguage')}</span>
+        <span>{hasLanguage ? langs.join(', ') : t('noLanguage')}</span>
         <time dateTime={project.lastUpdatedIso}>{formatIso(project.lastUpdatedIso)}</time>
       </footer>
     </article>
