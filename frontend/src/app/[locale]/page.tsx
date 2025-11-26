@@ -66,12 +66,13 @@ export default async function HomePage() {
         <div className="flex shrink-0 flex-col items-center">
           <div className="bg-background relative h-52 w-52 overflow-hidden rounded-full border shadow-md md:h-60 md:w-60">
             <Image
-              src="/photos/AshleyFletcher.jpg"
+              src="/photos/ashleyfletcher3.jpg"
               alt="Portrait of Ashley Fletcher"
               fill
               className="object-cover"
               sizes="(min-width: 768px) 240px, 208px"
               priority
+              quality={90}
             />
           </div>
           {/* Socials */}
