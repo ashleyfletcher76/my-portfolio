@@ -18,7 +18,7 @@ export function WorkTimelineItem({ item, index, totalCount, t }: WorkTimelineIte
 
         {/* Title */}
         <h2
-          className={`mt-1 text-base font-semibold sm:text-lg ${index === totalCount - 1 ? 'whitespace-nowrap' : ''} `}
+          className={`mt-1 text-base font-semibold sm:text-lg ${index === totalCount - 1 ? 'whitespace-nowrap' : ''}`}
         >
           {t(item.titleKey)}
         </h2>

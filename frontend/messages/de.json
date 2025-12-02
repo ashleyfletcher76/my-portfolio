@@ -169,7 +169,7 @@
     "schwarzItBody": "Backend-orientiertes Full-Stack-Praktikum an einer datenintensiven internen Plattform für die Schwarz-Gruppe.",
     "schwarzItPointOne": "Features in Kotlin-Backends und Vue.js/TypeScript-Frontends entwickelt.",
     "schwarzItPointTwo": "OpenAPI-basierte REST-APIs entworfen und genutzt – in einer Docker- und CI/CD-Umgebung.",
-    "schwarzItPointThree": "Datenflüsse verbessert und Backend-Modules refaktoriert, um die Wartbarkeit zu erhöhen.",
+    "schwarzItPointThree": "Datenflüsse verbessert und Backend-Module refaktoriert, um die Wartbarkeit zu erhöhen.",
     "schwarzItPointFour": "In einem agilen Team gearbeitet und zu Sprint-Planung, Code-Reviews und Dokumentation beigetragen."
   }
 }
