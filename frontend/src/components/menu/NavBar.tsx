@@ -1,5 +1,6 @@
 'use client';
 
+import Link from 'next/link';
 import { useEffect, useRef, useState } from 'react';
 
 import LanguageSwitch from '../toggle/LanguageToggle';
@@ -20,7 +21,9 @@ export default function NavBar() {
 
   return (
     <header className="navbar fixed inset-x-0 top-0 z-40 flex h-12 items-center justify-between px-2 text-2xl">
-      <div className="font-semibold">Ashley Fletcher</div>
+      <Link href="/" className="font-semibold" aria-label="Homepage">
+        Ashley Fletcher
+      </Link>
 
       {/* Desktop (md+) */}
       <nav className="hidden items-center gap-4 text-2xl md:flex">

@@ -1,7 +1,7 @@
 {
   "HomePage": {
     "title": "Hallo Welt!",
-    "subtitle": "Mehr Backend als dev — trotzdem bastle ich mit Java, Kotlin und einer Prise React an sauberen Frontends.",
+    "subtitle": "Mehr Backend als Frontend — trotzdem bastle ich mit Java, Kotlin und einer Prise React an sauberen Frontends.",
     "aboutCta": "Möchten Sie mehr über meinen Hintergrund erfahren? Besuchen Sie die <link>Über-mich</link>-Seite oder laden Sie unten meinen Lebenslauf herunter.",
     "download": "Herunterladen",
     "preview": "Vorschau",
@@ -25,8 +25,8 @@
   },
   "Footer": {
     "credits": "Impressum & Bildnachweise",
-    "aboutStatement": "Auf der About‑Seite verwendete Bilder — von oben nach unten aufgelistet (42‑Logo ausgenommen)",
-    "educationStatement": "Auf der Education‑Seite verwendete Bilder — von oben nach unten aufgelistet",
+    "aboutStatement": "Auf der Über-mich-Seite verwendete Bilder — von oben nach unten aufgelistet (42-Logo ausgenommen)",
+    "educationStatement": "Auf der Education-Seite verwendete Bilder — von oben nach unten aufgelistet",
     "imprint": "Impressum",
     "imageCredits": "Bildnachweise",
     "attributionStatement": "Nachfolgend finden Sie die Bildnachweise für die auf dieser Website verwendeten Bilder. Zusätzliche Nachweise werden bei Bedarf ergänzt."
@@ -43,20 +43,20 @@
   "AboutMe": {
     "me": "Über mich",
     "farming": "Ich bin auf Bauernhöfen aufgewachsen und habe mehrere Jahre in der Landwirtschaft gearbeitet, bevor ich 2019 nach Deutschland gezogen bin. Diese Zeit hat meine Arbeitsweise stark geprägt – lange Arbeitstage, praktisches Problemlösen und die Fähigkeit, ruhig zu bleiben, wenn Dinge nicht wie geplant laufen.",
-    "photography": "Nachdem ich in Deutschland angekommen war, begann ich als freiberuflicher Fotograf zu arbeiten. Ein kleines Ein-Personen-Unternehmen zu führen, hat mir Verantwortungsbewusstsein beigebracht, die Arbeit mit Kunden nähergebracht und gezeigt, wie man etwas Eigenes von Grund auf aufbaut.",
-    "42": "Mit der Zeit verschob sich mein Interesse immer mehr in Richtung Technik. Ich entschied mich für eine Umschulung zum Softwareentwickler und begann meine Ausbildung an der 42 Heilbronn, wo ich C, C++, Algorithmen und Systemprogrammierung in einem peer-getriebenen Lernumfeld gelernt habe.",
+    "photography": "Nachdem ich in Deutschland angekommen war, begann ich parallel zur Logistikarbeit als freiberuflicher Fotograf und Videograf. Ein kleines Ein-Personen-Unternehmen zu führen, hat mir Verantwortungsbewusstsein beigebracht, die Arbeit mit Kunden nähergebracht und gezeigt, wie man etwas Eigenes von Grund auf aufbaut.",
+    "42": "Mit der Zeit verschob sich mein Interesse immer mehr in Richtung Technik. Ich entschied mich für eine Umschulung zum Softwareentwickler und begann meine Ausbildung an der 42 Heilbronn, wo ich C, C++, Algorithmen und Systemprogrammierung in einem peer-basierten Lernumfeld gelernt habe.",
     "schwarz": "Kürzlich habe ich mein Praktikum bei Schwarz IT abgeschlossen, wo ich mit Kotlin, Java, TypeScript, Docker und Microservice-Architekturen gearbeitet habe. Dort wurde mir endgültig klar, dass Softwareentwicklung genau der Bereich ist, in dem ich meine berufliche Zukunft sehe."
   },
   "Education": {
     "title": "Bildung",
-    "intro": "Mein Bildungsweg verläuft nicht geradlinig. Er führt von der britischen Sekundarstufe und einer praxisorientierten Wirtschaftsausbildung über eine peer-getriebene Codingschule bis hin zu einem backendfokussierten Praktikum in Deutschland. Die Timeline zeigt, wie ich gelernt habe und wie ich heute arbeite.",
+    "intro": "Mein Bildungsweg verläuft nicht geradlinig. Er führt von der britischen Sekundarstufe und einer praxisorientierten Wirtschaftsausbildung über eine Codingschule zu einem backendfokussierten Praktikum in Deutschland. Die Timeline zeigt, wie ich gelernt habe und heute arbeite.",
     "timelineLabel": "Bildungstimeline",
 
     "ukSchoolYear": "Bis 16 Jahre",
     "ukSchoolTitle": "Schule im Vereinigten Königreich",
     "ukSchoolBody": "Britische Sekundarschulbildung bis zu den GCSEs, vergleichbar mit dem Mittleren Schulabschluss.",
     "ukSchoolPointOne": "Kernfächer wie Englisch, Mathematik, usw…",
-    "ukSchoolPointTwo": "Grundlagen des Lernens in der Schulzeit.",
+    "ukSchoolPointTwo": "Grundlagen fürs spätere Lernen gelegt.",
     "ukSchoolPointThree": "Früh selbstständig gelernt zu arbeiten.",
     "ukSchoolImageAlt": "Schulbücher und Klassenzimmermaterialien als Symbol für die britische Sekundarstufe",
 
@@ -70,20 +70,20 @@
 
     "piscineYear": "2023",
     "piscineTitle": "Die 42 Piscine",
-    "piscineBody": "Vierwöchiges Intensivbootcamp zur Auswahl selbstständiger Entwickler für die 42-Schule.",
+    "piscineBody": "Vierwöchiges Intensivbootcamp, das genutzt wird, um selbstständige Entwickler für die 42-Schule auszuwählen.",
     "piscinePointOne": "Ausschließlich durch Dokus und Peers gelernt.",
     "piscinePointTwo": "Lange Tage mit C-Code, Debugging und Druck.",
     "piscinePointThree": "Fokus und Belastbarkeit unter Stress bewiesen.",
     "piscineImageAlt": "Terminalfenster und C-Code als Symbol für die Piscine",
 
     "fortyTwoIntroYear": "Seit 2023",
-    "fortyTwoIntroTitle": "42 School – privat Programmierschule",
+    "fortyTwoIntroTitle": "42 School – private Programmierschule",
     "fortyTwoIntroBody": "International anerkannte Programmierschule, getragen von führenden Unternehmen.",
     "fortyTwoIntroPointOne": "Software von Grund auf entwickelt.",
     "fortyTwoIntroPointTwo": "C, Algorithmen, Systemprogrammierung …",
     "fortyTwoIntroPointThree": "Analytisches Denken und Zusammenarbeit gestärkt.",
     "fortyTwoIntroImageAlt": "Stilisiertes 42-Logo und Code-Editor als Symbol für das 42-Konzept",
-    "fortyTwoHeilbronnSite": "Auf der offiziellen 42 Heilbronn‑Seite",
+    "fortyTwoHeilbronnSite": "Auf der offiziellen 42 Heilbronn-Seite",
 
     "fortyTwoJourneyYear": "2023–2024",
     "fortyTwoJourneyTitle": "Mein Weg durch das 42-Core-Curriculum",
@@ -123,7 +123,7 @@
     "timelineLabel": "Überblick über die Berufserfahrung",
 
     "lifeguardYear": "2013–2016",
-    "lifeguardTitle": "Badewart, Places Leisure",
+    "lifeguardTitle": "Lifeguard, Places Leisure",
     "lifeguardBody": "Meine erste langfristige Stelle im Vereinigten Königreich, in der ich Gäste in einem gut besuchten öffentlichen Freizeitzentrum betreute.",
     "lifeguardPointOne": "Überwachte die Sicherheit im Schwimmbad und setzte Regeln durch, um Unfälle zu vermeiden.",
     "lifeguardPointTwo": "Reagierte ruhig und klar auf Vorfälle und Erste-Hilfe-Situationen.",
@@ -169,7 +169,7 @@
     "schwarzItBody": "Backend-orientiertes Full-Stack-Praktikum an einer datenintensiven internen Plattform für die Schwarz-Gruppe.",
     "schwarzItPointOne": "Features in Kotlin-Backends und Vue.js/TypeScript-Frontends entwickelt.",
     "schwarzItPointTwo": "OpenAPI-basierte REST-APIs entworfen und genutzt – in einer Docker- und CI/CD-Umgebung.",
-    "schwarzItPointThree": "Datenflüsse verbessert und Backend-Module refaktoriert, um die Wartbarkeit zu erhöhen.",
+    "schwarzItPointThree": "Datenflüsse verbessert und Backend-Modules refaktoriert, um die Wartbarkeit zu erhöhen.",
     "schwarzItPointFour": "In einem agilen Team gearbeitet und zu Sprint-Planung, Code-Reviews und Dokumentation beigetragen."
   }
 }
