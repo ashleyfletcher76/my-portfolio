@@ -1,11 +1,11 @@
 import Image from 'next/image';
-import { Link } from '@/i18n/routing';
 import { getLocale, getTranslations } from 'next-intl/server';
 
 import CVCard from '@/components/CVCard';
 import LatestProjectCard from '@/components/LatestProjectCard';
 import SkillsBar from '@/components/SkillsBar';
 import Socials from '@/components/Socials';
+import { Link } from '@/i18n/routing';
 import { getLatestProject, type LatestProject } from '@/lib/api';
 
 export default async function HomePage() {
