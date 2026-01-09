@@ -3,6 +3,7 @@
 import { useTranslations } from 'next-intl';
 import { FaJava } from 'react-icons/fa';
 import { SiReact, SiVuedotjs, SiDocker, SiKotlin, SiCplusplus, SiC } from 'react-icons/si';
+import { TbBrandCSharp } from 'react-icons/tb';
 
 const skills = [
   { Icon: SiReact, label: 'React', color: 'text-sky-400' },
@@ -12,6 +13,7 @@ const skills = [
   { Icon: SiKotlin, label: 'Kotlin', color: 'text-violet-500' },
   { Icon: SiCplusplus, label: 'C++', color: 'text-blue-600' },
   { Icon: SiC, label: 'C', color: 'text-gray-500' },
+  { Icon: TbBrandCSharp, label: 'C#', color: 'text-indigo-500' },
 ];
 
 export default function SkillsBar() {
@@ -20,7 +22,7 @@ export default function SkillsBar() {
     <section className="mx-auto w-full max-w-5xl">
       <h3 className="mb-4 text-center text-lg font-semibold">{t('skillsPhrase')}</h3>
       <ul
-        className="mx-auto grid w-full max-w-5xl grid-cols-3 gap-4 sm:grid-cols-4 md:grid-cols-7"
+        className="mx-auto grid w-full max-w-5xl grid-cols-3 gap-4 sm:grid-cols-4 md:grid-cols-8"
         role="list"
       >
         {skills.map(({ Icon, label, color }) => (
